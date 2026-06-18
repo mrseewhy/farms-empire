@@ -11,6 +11,7 @@ This module defines the TanStack Start file-based routing structure, rendering s
 
 | Route Path         | File Path                        | Rendering Strategy | Data Requirements                        |
 | :----------------- | :------------------------------- | :----------------- | :--------------------------------------- |
+| `/login`           | `src/routes/login.tsx`           | **SSG**            | None (Login form, submits via Server Function) |
 | `/`                | `src/routes/index.tsx`           | **SSG**            | None (Static content)                    |
 | `/who-we-are`      | `src/routes/who-we-are.tsx`      | **SSG**            | None                                     |
 | `/our-story`       | `src/routes/our-story.tsx`       | **SSG**            | None                                     |

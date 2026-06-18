@@ -1,9 +1,3 @@
-# Architecture Modules: Farms Empire Web Platform
-
-Below are the exhaustive architectural definitions for the remaining modules. These documents serve as the absolute technical truth for implementation.
-
----
-
 # API Architecture (`api.md`)
 
 This module defines all TanStack Start Server Functions. Since TanStack Start uses Server Functions rather than traditional REST endpoints, these are defined as typed, callable async functions that execute on Cloudflare Workers.
@@ -156,67 +150,180 @@ _(Note: `createContent`, `updateContent`, `deleteContent`, `getContent`, `listCo
 - **Response:** `{ totalBlogs: number, openCareers: number, unreadContacts: number, totalUsers: number }`
 - **Description:** Fetches aggregated counts. **Logic:** Checks Cloudflare KV cache first. If missing, queries Turso, caches result for 60 seconds, and returns.
 
----
+## 6. Publications Management Functions
 
-# Auth Architecture (`auth.md`)
+### `listPublications`
 
-This module defines the authentication lifecycle, session management, and Role-Based Access Control (RBAC) using Better Auth.
+- **Auth Required:** No (Public) / Yes (Dashboard)
+- **Role:** Public / `ADMIN` / `MANAGER`
+- **Request:** `{ page?: number, limit?: number, category?: PublicationCategory }`
+- **Response:** `{ publications: PublicationSummary[], total: number }`
+- **Description:** Fetches publications. Public calls only return metadata (no internal fields). Dashboard calls return full records.
 
-## 1. Better Auth Configuration
+### `getPublicationById`
 
-- **Provider:** Better Auth with custom Drizzle adapter for Turso.
-- **Session Strategy:** JWT stored in an `HttpOnly`, `Secure`, `SameSite=Lax` cookie.
-- **User Model Extension:** Extends the default Better Auth user schema with a `role` column (`text`, default `'MANAGER'`).
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ id: string }`
+- **Response:** `{ publication: Publication | null }`
+- **Description:** Fetches a single publication by ID for editing in the dashboard.
 
-## 2. Authentication Flows
+### `createPublication`
 
-### Login
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ title: string, description: string, external_url: string, category: PublicationCategory }`
+- **Response:** `{ publication: Publication }`
+- **Description:** Creates a new publication record.
 
-1. User submits email/password to `loginUser` server function.
-2. Better Auth verifies credentials against the `password_hash` in Turso.
-3. On success, a session record is created in the `sessions` table, and the session cookie is set in the response headers.
-4. Client redirects to `/dashboard`.
+### `updatePublication`
 
-### Session Validation (Middleware)
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ id: string, title?: string, description?: string, external_url?: string, category?: PublicationCategory }`
+- **Response:** `{ publication: Publication }`
+- **Description:** Updates publication details.
 
-1. Every protected Server Function and protected Route Loader calls `auth.api.getSession({ headers })`.
-2. If the session is invalid or expired, it throws an `UNAUTHORIZED` error.
-3. If valid, it extracts the `user.role` for RBAC checks.
+### `deletePublication`
 
-### Logout
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ id: string }`
+- **Response:** `{ success: boolean }`
+- **Description:** Hard deletes the publication.
 
-1. User triggers `logoutUser`.
-2. Better Auth invalidates the session in the database.
-3. The session cookie is cleared via `Set-Cookie` with an expired date.
+## 7. Public Content Functions (Projects & Careers)
 
-## 3. Role-Based Access Control (RBAC) Enforcement
+### `listProjects`
 
-RBAC is enforced at two distinct layers. **The server layer is the only security boundary.**
+- **Auth Required:** No
+- **Role:** Public
+- **Request:** `{ page: number, limit: number }`
+- **Response:** `{ projects: ProjectSummary[], total: number }`
+- **Description:** Fetches paginated published projects for the public projects list page. Returns only summary fields (no `content` HTML).
 
-### Server-Side Enforcement (Security Boundary)
+### `getProjectBySlug`
 
-Every protected Server Function includes a guard clause:
+- **Auth Required:** No
+- **Role:** Public
+- **Request:** `{ slug: string }`
+- **Response:** `{ project: ProjectDetail | null }`
+- **Description:** Fetches a single published project by its unique slug for the public detail page.
 
-```typescript
-const session = await auth.api.getSession({ headers });
-if (!session) throw new AuthError("UNAUTHORIZED");
-if (requiredRole === "ADMIN" && session.user.role !== "ADMIN")
-  throw new AuthError("FORBIDDEN");
-```
+### `createProject`
 
-### Client-Side Enforcement (UX Only)
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ title: string, location: string, content: string, cover_image_url?: string, status: 'DRAFT' | 'PUBLISHED' }`
+- **Response:** `{ project: Project }`
+- **Description:** Creates a project. Auto-generates the `slug` from the title with collision handling. Sets `author_id` to the caller's ID.
 
-- The `useSession` hook provides the user's role to React components.
-- Components conditionally render UI (e.g., hiding the "Delete User" button for Managers).
-- _Rule:_ Client-side hiding does not prevent API calls if a user manipulates the DOM or network requests.
+### `updateProject`
 
-## 4. Initial Super Admin Provisioning
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ id: string, title?: string, location?: string, content?: string, cover_image_url?: string, status?: 'DRAFT' | 'PUBLISHED' }`
+- **Response:** `{ project: Project }`
+- **Description:** Updates project details. If the title changes, regenerates and checks slug uniqueness.
 
-- **Trigger:** Executed via a dedicated TanStack Start CLI command or a one-time server function on first deployment.
-- **Logic:**
-  1. Reads `INITIAL_ADMIN_EMAIL` and `INITIAL_ADMIN_PASSWORD` from Cloudflare environment variables.
-  2. Queries the `users` table. If `count === 0`, it hashes the password and inserts the user with `role = 'ADMIN'`.
-  3. If `count > 0`, it aborts to prevent duplicate admins.
-- **Post-Deployment:** The environment variables must be manually deleted from the Cloudflare dashboard by the DevOps engineer immediately after seeding.
+### `deleteProject`
+
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ id: string }`
+- **Response:** `{ success: boolean }`
+- **Description:** Hard deletes the project.
+
+### `listCareers`
+
+- **Auth Required:** No
+- **Role:** Public
+- **Request:** `{ page: number, limit: number }`
+- **Response:** `{ careers: CareerSummary[], total: number }`
+- **Description:** Fetches paginated published careers for the public careers list page.
+
+### `getCareerBySlug`
+
+- **Auth Required:** No
+- **Role:** Public
+- **Request:** `{ slug: string }`
+- **Response:** `{ career: CareerDetail | null }`
+- **Description:** Fetches a single published career by its unique slug for the public detail page.
+
+### `createCareer`
+
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ title: string, location: string, job_type: JobType, description: string, status: 'DRAFT' | 'PUBLISHED' }`
+- **Response:** `{ career: Career }`
+- **Description:** Creates a career. Auto-generates the `slug` from the title with collision handling.
+
+### `updateCareer`
+
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ id: string, title?: string, location?: string, job_type?: JobType, description?: string, status?: 'DRAFT' | 'PUBLISHED' }`
+- **Response:** `{ career: Career }`
+- **Description:** Updates career details. If the title changes, regenerates and checks slug uniqueness.
+
+### `deleteCareer`
+
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ id: string }`
+- **Response:** `{ success: boolean }`
+- **Description:** Hard deletes the career.
+
+## 8. Contact Inbox Management Functions
+
+### `listContacts`
+
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ page: number, limit: number, category?: ContactCategory, isRead?: boolean }`
+- **Response:** `{ contacts: Contact[], total: number }`
+- **Description:** Fetches paginated contact submissions with optional filters for category and read status.
+
+### `getContactById`
+
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ id: string }`
+- **Response:** `{ contact: Contact | null }`
+- **Description:** Fetches a single contact submission. Automatically marks it as read.
+
+### `markContactRead`
+
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ id: string }`
+- **Response:** `{ success: boolean }`
+- **Description:** Marks a contact submission as read by setting `is_read = 1`.
+
+### `deleteContact`
+
+- **Auth Required:** Yes
+- **Role:** `ADMIN`, `MANAGER`
+- **Request:** `{ id: string }`
+- **Response:** `{ success: boolean }`
+- **Description:** Hard deletes the contact submission.
+
+## 9. User Profile Functions
+
+### `updateUserProfile`
+
+- **Auth Required:** Yes
+- **Role:** Any authenticated user
+- **Request:** `{ name?: string, email?: string }`
+- **Response:** `{ user: UserProfile }`
+- **Description:** Allows any authenticated user to update their own name and email. Cannot change role or other users' profiles.
+
+### `getUserProfile`
+
+- **Auth Required:** Yes
+- **Role:** Any authenticated user
+- **Request:** `void`
+- **Response:** `{ user: UserProfile }`
+- **Description:** Returns the current authenticated user's profile data.
 
 ---

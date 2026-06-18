@@ -1,0 +1,5 @@
+{
+  "outDir": "./src/routeTree.gen.ts",
+  "moduleSeparator": "/",
+  "fileNaming": "flat"
+}

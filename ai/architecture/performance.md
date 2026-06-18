@@ -29,7 +29,7 @@ This module defines strategies to ensure the application remains fast, SEO-frien
 ## 4. Frontend Performance & SEO
 
 - **TipTap Lazy Loading:** The TipTap editor is a heavy library (~150kb). It is dynamically imported (`React.lazy`) and only loaded when the user navigates to a dashboard create/edit page.
-- **Image Optimization:** All public images use Cloudinary's `f_auto` (auto-format to WebP/AVIF) and `q_auto` (auto-quality). Next/Image or TanStack Start's equivalent `Image` component is used to generate responsive `srcset` attributes.
+- **Image Optimization:** All public images use Cloudinary's `f_auto` (auto-format to WebP/AVIF) and `q_auto` (auto-quality). The project uses a custom optimized `Image` component wrapping `@cloudinary/url-gen` to generate responsive `srcset` attributes.
 - **SEO Meta Tags:** Every public route uses TanStack Start's `<Meta>` component to inject unique `title`, `description`, and OpenGraph tags. Dynamic pages generate these from the database record's `title` and `excerpt`.
 
 ---

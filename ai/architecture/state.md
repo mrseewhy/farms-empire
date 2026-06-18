@@ -27,7 +27,7 @@ Data fetching is handled by TanStack Start's native server function integration 
 - **Target:** `getDashboardStats` server function.
 - **Mechanism:** Before querying Turso, the function checks Cloudflare KV for the key `dashboard_stats`.
 - **TTL:** 60 seconds.
-- **Invalidation:** When a blog is published, or a contact is received, the specific KV key is deleted, forcing a fresh DB query on the next dashboard load.
+- **Invalidation:** The KV key is deleted (forcing a fresh DB query on next load) whenever any of the following mutations occur: a blog/project/career is created, updated, or deleted; a contact is received or deleted; a user is created or deleted.
 
 ### Cloudflare Cache Rules (Public SSR & Cloudinary)
 

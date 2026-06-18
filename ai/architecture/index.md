@@ -9,8 +9,8 @@ Contains: Definitions for all TanStack Start Server Functions, including request
 Read when: Building or modifying backend endpoints for content CRUD, contact form submissions, newsletter subscriptions, or Cloudinary image upload routing.
 
 Module: auth.md
-Contains: Better Auth configuration, session management, role-based access control (RBAC) logic, and the initial Super Admin provisioning seed script.
-Read when: Implementing login/logout flows, enforcing Admin vs. Manager permissions, handling restricted password resets, or securing protected dashboard routes.
+Contains: Better Auth configuration, session management, role-based access control (RBAC) logic, schema integration strategy (Better Auth's built-in user table with extended `role` field), and the initial Super Admin provisioning seed script.
+Read when: Implementing login/logout flows, enforcing Admin vs. Manager permissions, handling restricted password resets, securing protected dashboard routes, or understanding how Better Auth's schema integrates with the application tables.
 
 Module: routing.md
 Contains: The TanStack Start file-based routing structure, SSG vs. SSR rendering strategies, and dynamic slug generation rules for public and dashboard pages.

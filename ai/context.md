@@ -5,7 +5,9 @@
 - **Framework:** TanStack Start (`^1.0.0`) with React (`^19.0.0`) and Vite (`^6.0.0`)
 - **State Management:** Zustand (`^5.0.0`) - _Strictly for ephemeral UI state only_
 - **Styling & UI:** Tailwind CSS (`^3.4.0`), shadcn/ui (latest), `@tailwindcss/typography` (`^0.5.10`)
+- **Data Fetching:** TanStack Query (`@tanstack/react-query` `^5.0.0`) - _Used alongside TanStack Start server functions_
 - **WYSIWYG Editor:** TipTap (`@tiptap/react` `^2.10.0`, `@tiptap/starter-kit` `^2.10.0`)
+- **HTML Sanitization:** DOMPurify (`^3.0.0`) - _Used to sanitize TipTap HTML content before sending to server_
 - **Backend/Runtime:** TanStack Start Server Functions executing on Cloudflare Workers (`wrangler` `^3.90.0`)
 - **Database:** Turso (Edge libSQL/SQLite) via `@libsql/client` (`^0.14.0`) + Drizzle ORM (`^0.36.0`)
 - **Authentication:** Better Auth (`^1.1.0`)
