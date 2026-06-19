@@ -1,6 +1,6 @@
 {
   "/Users/olusegun/Desktop/tanstack-projects/farms-empire/src/styles.css": {
-    "file": "assets/styles-CF0xTHEk.css",
+    "file": "assets/styles-C6_GI2JG.css",
     "src": "/Users/olusegun/Desktop/tanstack-projects/farms-empire/src/styles.css"
   },
   "_FadeIn-BA0I-RIa.js": {
@@ -12,12 +12,13 @@
       "_react-5VzO3yf4.js"
     ]
   },
-  "_Match-DZ-gYcDu.js": {
-    "file": "assets/Match-DZ-gYcDu.js",
+  "_Match-B-QGphPG.js": {
+    "file": "assets/Match-B-QGphPG.js",
     "name": "Match",
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
       "_react-dom-B9kYsnq-.js",
+      "_matchContext-iZ_vu40-.js",
       "_react-5VzO3yf4.js"
     ]
   },
@@ -37,6 +38,33 @@
       "_react-5VzO3yf4.js"
     ]
   },
+  "__postId-Bc9l8lae.js": {
+    "file": "assets/_postId-Bc9l8lae.js",
+    "name": "_postId",
+    "imports": [
+      "_jsx-runtime-BuMTCWze.js",
+      "_react-dom-B9kYsnq-.js",
+      "_link-DeGtLGkj.js",
+      "_matchContext-iZ_vu40-.js",
+      "_useMatch-C1eCEOj_.js",
+      "_react-5VzO3yf4.js"
+    ],
+    "dynamicImports": [
+      "src/routes/_public/blog/$postId.tsx?tsr-split=component"
+    ]
+  },
+  "_atom-HSyjuv6w.js": {
+    "file": "assets/atom-HSyjuv6w.js",
+    "name": "atom"
+  },
+  "_blog-data-wXDbbDPE.js": {
+    "file": "assets/blog-data-wXDbbDPE.js",
+    "name": "blog-data"
+  },
+  "_config-B_JLTQPd.js": {
+    "file": "assets/config-B_JLTQPd.js",
+    "name": "config"
+  },
   "_jsx-runtime-BuMTCWze.js": {
     "file": "assets/jsx-runtime-BuMTCWze.js",
     "name": "jsx-runtime"
@@ -47,6 +75,14 @@
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
       "_react-dom-B9kYsnq-.js",
+      "_react-5VzO3yf4.js"
+    ]
+  },
+  "_matchContext-iZ_vu40-.js": {
+    "file": "assets/matchContext-iZ_vu40-.js",
+    "name": "matchContext",
+    "imports": [
+      "_jsx-runtime-BuMTCWze.js",
       "_react-5VzO3yf4.js"
     ]
   },
@@ -65,13 +101,13 @@
       "_react-5VzO3yf4.js"
     ]
   },
-  "_useMatch-EoHBaAGA.js": {
-    "file": "assets/useMatch-EoHBaAGA.js",
+  "_useMatch-C1eCEOj_.js": {
+    "file": "assets/useMatch-C1eCEOj_.js",
     "name": "useMatch",
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
-      "_Match-DZ-gYcDu.js",
       "_react-dom-B9kYsnq-.js",
+      "_matchContext-iZ_vu40-.js",
       "_react-5VzO3yf4.js"
     ]
   },
@@ -92,16 +128,16 @@
     "isDynamicEntry": true
   },
   "src/router.tsx": {
-    "file": "assets/router-xd3Fv3pC.js",
+    "file": "assets/router-CPcxt_6K.js",
     "name": "router",
     "src": "src/router.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
-      "_Match-DZ-gYcDu.js",
+      "_Match-B-QGphPG.js",
       "_react-dom-B9kYsnq-.js",
-      "_link-DeGtLGkj.js",
-      "_useMatch-EoHBaAGA.js",
+      "__postId-Bc9l8lae.js",
+      "_atom-HSyjuv6w.js",
       "_react-5VzO3yf4.js"
     ],
     "dynamicImports": [
@@ -114,37 +150,57 @@
       "src/routes/_public/sdg-2.tsx?tsr-split=component",
       "src/routes/_public/publications.tsx?tsr-split=component",
       "src/routes/_public/projects.tsx?tsr-split=component",
+      "src/routes/_public/privacy-policy.tsx?tsr-split=component",
       "src/routes/_public/partner-with-us.tsx?tsr-split=component",
       "src/routes/_public/our-story.tsx?tsr-split=component",
       "src/routes/_public/our-solution.tsx?tsr-split=component",
+      "src/routes/_public/our-services.tsx?tsr-split=component",
       "src/routes/_public/contact.tsx?tsr-split=component",
-      "src/routes/_public/blog.tsx?tsr-split=component"
+      "src/routes/_public/blog/index.tsx?tsr-split=component"
     ],
     "assets": [
-      "assets/styles-CF0xTHEk.css"
+      "assets/styles-C6_GI2JG.css"
     ]
   },
   "src/routes/_public.tsx?tsr-split=component": {
-    "file": "assets/_public-DQLtC1YW.js",
+    "file": "assets/_public-CIozbnjl.js",
     "name": "_public",
     "src": "src/routes/_public.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
-      "_Match-DZ-gYcDu.js",
+      "_Match-B-QGphPG.js",
       "_link-DeGtLGkj.js",
       "_utils-BcuCXoSn.js",
-      "_react-5VzO3yf4.js"
+      "_react-5VzO3yf4.js",
+      "_config-B_JLTQPd.js"
     ]
   },
-  "src/routes/_public/blog.tsx?tsr-split=component": {
-    "file": "assets/blog-Cbo12SQU.js",
-    "name": "blog",
-    "src": "src/routes/_public/blog.tsx?tsr-split=component",
+  "src/routes/_public/blog/$postId.tsx?tsr-split=component": {
+    "file": "assets/_postId-BWJhfwz7.js",
+    "name": "_postId",
+    "src": "src/routes/_public/blog/$postId.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
-      "_PageHero-8BdnHdBb.js"
+      "__postId-Bc9l8lae.js",
+      "_link-DeGtLGkj.js",
+      "_FadeIn-BA0I-RIa.js",
+      "_PageHero-8BdnHdBb.js",
+      "_blog-data-wXDbbDPE.js"
+    ]
+  },
+  "src/routes/_public/blog/index.tsx?tsr-split=component": {
+    "file": "assets/blog-Dkd3ftyt.js",
+    "name": "blog",
+    "src": "src/routes/_public/blog/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_jsx-runtime-BuMTCWze.js",
+      "_link-DeGtLGkj.js",
+      "_PageHero-8BdnHdBb.js",
+      "_Stagger-7mlWtPLa.js",
+      "_blog-data-wXDbbDPE.js"
     ]
   },
   "src/routes/_public/contact.tsx?tsr-split=component": {
@@ -158,7 +214,7 @@
     ]
   },
   "src/routes/_public/index.tsx?tsr-split=component": {
-    "file": "assets/_public-BoO2Wpxl.js",
+    "file": "assets/_public-CRQZYtGN.js",
     "name": "_public",
     "src": "src/routes/_public/index.tsx?tsr-split=component",
     "isDynamicEntry": true,
@@ -168,11 +224,25 @@
       "_utils-BcuCXoSn.js",
       "_react-5VzO3yf4.js",
       "_FadeIn-BA0I-RIa.js",
-      "_Stagger-7mlWtPLa.js"
+      "_Stagger-7mlWtPLa.js",
+      "_config-B_JLTQPd.js"
+    ]
+  },
+  "src/routes/_public/our-services.tsx?tsr-split=component": {
+    "file": "assets/our-services-BDwbog7q.js",
+    "name": "our-services",
+    "src": "src/routes/_public/our-services.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_jsx-runtime-BuMTCWze.js",
+      "_FadeIn-BA0I-RIa.js",
+      "_PageHero-8BdnHdBb.js",
+      "_Stagger-7mlWtPLa.js",
+      "_config-B_JLTQPd.js"
     ]
   },
   "src/routes/_public/our-solution.tsx?tsr-split=component": {
-    "file": "assets/our-solution-CyoIOVCN.js",
+    "file": "assets/our-solution-C1EkhiVt.js",
     "name": "our-solution",
     "src": "src/routes/_public/our-solution.tsx?tsr-split=component",
     "isDynamicEntry": true,
@@ -184,7 +254,7 @@
     ]
   },
   "src/routes/_public/our-story.tsx?tsr-split=component": {
-    "file": "assets/our-story-CH6aXl4e.js",
+    "file": "assets/our-story-CXN2vE-6.js",
     "name": "our-story",
     "src": "src/routes/_public/our-story.tsx?tsr-split=component",
     "isDynamicEntry": true,
@@ -195,7 +265,7 @@
     ]
   },
   "src/routes/_public/partner-with-us.tsx?tsr-split=component": {
-    "file": "assets/partner-with-us-DKBPyxEL.js",
+    "file": "assets/partner-with-us-ry40x5-K.js",
     "name": "partner-with-us",
     "src": "src/routes/_public/partner-with-us.tsx?tsr-split=component",
     "isDynamicEntry": true,
@@ -207,28 +277,43 @@
       "_Stagger-7mlWtPLa.js"
     ]
   },
+  "src/routes/_public/privacy-policy.tsx?tsr-split=component": {
+    "file": "assets/privacy-policy-4R49GUK9.js",
+    "name": "privacy-policy",
+    "src": "src/routes/_public/privacy-policy.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_jsx-runtime-BuMTCWze.js",
+      "_PageHero-8BdnHdBb.js"
+    ]
+  },
   "src/routes/_public/projects.tsx?tsr-split=component": {
-    "file": "assets/projects-s43anEAe.js",
+    "file": "assets/projects-DFQzm7cf.js",
     "name": "projects",
     "src": "src/routes/_public/projects.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
-      "_PageHero-8BdnHdBb.js"
+      "_FadeIn-BA0I-RIa.js",
+      "_PageHero-8BdnHdBb.js",
+      "_Stagger-7mlWtPLa.js",
+      "_config-B_JLTQPd.js"
     ]
   },
   "src/routes/_public/publications.tsx?tsr-split=component": {
-    "file": "assets/publications-CdEJWcr4.js",
+    "file": "assets/publications-BHXx2RiT.js",
     "name": "publications",
     "src": "src/routes/_public/publications.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
-      "_PageHero-8BdnHdBb.js"
+      "_FadeIn-BA0I-RIa.js",
+      "_PageHero-8BdnHdBb.js",
+      "_config-B_JLTQPd.js"
     ]
   },
   "src/routes/_public/sdg-2.tsx?tsr-split=component": {
-    "file": "assets/sdg-2-BvLHNPmi.js",
+    "file": "assets/sdg-2-CtnNS7zQ.js",
     "name": "sdg-2",
     "src": "src/routes/_public/sdg-2.tsx?tsr-split=component",
     "isDynamicEntry": true,
@@ -240,19 +325,18 @@
     ]
   },
   "src/routes/_public/who-we-are.tsx?tsr-split=component": {
-    "file": "assets/who-we-are-D-Q6krWV.js",
+    "file": "assets/who-we-are-0CAf8jxS.js",
     "name": "who-we-are",
     "src": "src/routes/_public/who-we-are.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
       "_FadeIn-BA0I-RIa.js",
-      "_PageHero-8BdnHdBb.js",
-      "_Stagger-7mlWtPLa.js"
+      "_PageHero-8BdnHdBb.js"
     ]
   },
   "src/routes/_public/why-ujamaa.tsx?tsr-split=component": {
-    "file": "assets/why-ujamaa-DglxxNez.js",
+    "file": "assets/why-ujamaa-DIXZsbwH.js",
     "name": "why-ujamaa",
     "src": "src/routes/_public/why-ujamaa.tsx?tsr-split=component",
     "isDynamicEntry": true,
@@ -263,13 +347,13 @@
     ]
   },
   "src/routes/dashboard.tsx?tsr-split=component": {
-    "file": "assets/dashboard-DpKorl7Z.js",
+    "file": "assets/dashboard-DYza-Ins.js",
     "name": "dashboard",
     "src": "src/routes/dashboard.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
-      "_Match-DZ-gYcDu.js",
+      "_Match-B-QGphPG.js",
       "_link-DeGtLGkj.js",
       "_utils-BcuCXoSn.js",
       "_react-5VzO3yf4.js"
@@ -285,7 +369,7 @@
     ]
   },
   "tanstack-start-manifest:v": {
-    "file": "assets/_tanstack-start-manifest_v-DPkf28c5.js",
+    "file": "assets/_tanstack-start-manifest_v-Cskj93AE.js",
     "name": "_tanstack-start-manifest_v",
     "src": "tanstack-start-manifest:v",
     "isDynamicEntry": true
@@ -297,9 +381,10 @@
     "isEntry": true,
     "imports": [
       "_jsx-runtime-BuMTCWze.js",
-      "_Match-DZ-gYcDu.js",
+      "_Match-B-QGphPG.js",
       "_react-dom-B9kYsnq-.js",
-      "_useMatch-EoHBaAGA.js",
+      "_matchContext-iZ_vu40-.js",
+      "_atom-HSyjuv6w.js",
       "_react-5VzO3yf4.js"
     ],
     "dynamicImports": [

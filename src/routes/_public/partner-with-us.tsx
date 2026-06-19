@@ -33,24 +33,34 @@ function PartnerWithUsPage() {
             <FadeIn direction="right">
               <div>
                 <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
-                  If You Are Not Earning From Your Land, Someone Else Is!
+                  Your Land. Our Expertise. One Harvest. Infinite Potential.
                 </h2>
                 <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-                  Your land may be sitting idle, but your wealth does not have
-                  to. Partner with Farms Empire today, put your undeveloped land
-                  to work through communal farming, and watch it generate massive
-                  returns while you wait for development.
+                  If you are not earning from your land, someone else is. Your
+                  land may be sitting idle, but your wealth does not have to.
+                  Partner with Farms Empire today, put your undeveloped land to
+                  work through communal farming, and watch it generate massive
+                  returns while you wait for development. Don't let your
+                  greatest asset sleep, let it grow.
                 </p>
-                <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                  Don't let your greatest asset sleep, let it grow.
-                </p>
+
                 <Link
                   to="/contact"
                   className="group mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground shadow-md transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]"
                 >
                   Request a Call
-                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg
+                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
                   </svg>
                 </Link>
               </div>
@@ -67,37 +77,41 @@ function PartnerWithUsPage() {
               Who Should Partner With Us?
             </h2>
           </FadeIn>
-          <Stagger staggerDelay={100} className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="mt-10 space-y-6">
             {[
               {
+                num: 1,
                 title: "Landowners and Property Investors",
-                desc: "You own land in Nigeria or across Africa. It may be awaiting development, caught in planning processes, or simply lying idle. Farms Empire will partner with you to activate your land through our communal farming model.",
+                desc: "You own land in Nigeria or across Africa. It may be awaiting development, caught in planning processes, or simply lying idle. Whatever the reason, idle land is not neutral, it is a daily loss of potential income. \n\ Farms Empire will partner with you to activate your land through our communal farming model; managing everything from farm design and community mobilization to harvest operations and commercial sales. You provide the land. We provide everything else. You earn returns. Your land builds value.",
                 benefits: [
-                  "A legally structured land use agreement with clear terms and return structures",
+                  "A legally structured land use agreement with clear terms, timelines, and return structures",
                   "Zero operational burden; Farms Empire manages all farm operations end to end",
-                  "Regular farm performance reports and open site visit access",
+                  "Regular farm performance reports and open site visit access at any time",
                   "A share of commercial revenues from every harvest cycle",
                   "Enhanced land value through active agricultural development",
-                  "Full financial transparency and accountability",
+                  "Full financial transparency and accountability throughout the partnership",
                 ],
               },
               {
+                num: 2,
                 title: "Communities and Farming Groups",
                 desc: "Your community has people, local knowledge, and a desire for economic independence. Farms Empire brings the land access, expert management, cooperative structure, and market linkages that transform community farming potential into commercial agricultural enterprise.",
                 benefits: [
-                  "Structured income from communal agricultural activity",
-                  "Training in modern, productive farming techniques",
-                  "Cooperative governance structures that protect community interests",
-                  "Access to institutional markets and fair commercial pricing",
-                  "Food security for community members",
+                  "Structured income from communal agricultural activity with transparent revenue sharing",
+                  "Training in modern, productive farming techniques applicable beyond the partnership",
+                  "Cooperative governance structures that protect community interests and shared assets",
+                  "Access to institutional markets and fair commercial pricing for all produce",
+                  "Food security for community members from the food grown on their own farms",
                 ],
               },
               {
+                num: 3,
                 title: "Impact Investors and Development Finance Partners",
-                desc: "Agriculture is Africa's most impactful investment, generating returns in financial yield, food security, employment, community resilience, and SDG alignment simultaneously. Farms Empire offers structured investment opportunities with clear impact metrics and commercial return frameworks.",
+                desc: "Agriculture is Africa's most impactful investment, generating returns in financial yield, food security, employment, community resilience, and SDG alignment simultaneously. Farms Empire offers structured investment opportunities in our communal farming enterprises with clear impact metrics and commercial return frameworks.",
                 benefits: [],
               },
               {
+                num: 4,
                 title: "Government and Development Agencies",
                 desc: "Partner with Farms Empire to design and deliver community agricultural development programs that create measurable impact at scale. We bring field-level expertise, community trust, and operational capacity to government agricultural initiatives.",
                 benefits: [],
@@ -105,29 +119,47 @@ function PartnerWithUsPage() {
             ].map((partner) => (
               <div
                 key={partner.title}
-                className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20"
+                className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20 sm:flex-row sm:items-start sm:gap-6"
               >
-                <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
-                  {partner.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {partner.desc}
-                </p>
-                {partner.benefits.length > 0 && (
-                  <ul className="mt-4 flex-1 space-y-2">
-                    {partner.benefits.map((benefit) => (
-                      <li key={benefit} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                        {benefit}
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primary text-2xl font-bold text-primary-foreground">
+                  {partner.num}
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                    {partner.title}
+                  </h3>
+                  <p className="mt-2  leading-relaxed text-muted-foreground">
+                    {partner.desc}
+                  </p>
+                  {partner.benefits.length > 0 && (
+                    <ul className="mt-6 grid gap-6 sm:grid-cols-2">
+                      {partner.benefits.map((benefit) => (
+                        <li
+                          key={benefit}
+                          className="flex items-start gap-2  text-muted-foreground"
+                        >
+                          <svg
+                            className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={4}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          {benefit}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
             ))}
-          </Stagger>
+          </div>
         </div>
       </section>
 
@@ -139,18 +171,38 @@ function PartnerWithUsPage() {
               How the Partnership Works
             </h2>
           </FadeIn>
-          <Stagger staggerDelay={80} className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+          <Stagger
+            staggerDelay={80}
+            className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-5"
+          >
             {[
-              { step: "1", title: "Initial Consultation", desc: "Contact us to discuss your land, community, or investment interest." },
-              { step: "2", title: "Due Diligence", desc: "We conduct a site assessment and structure a legally binding partnership agreement." },
-              { step: "3", title: "Farm Activation", desc: "Our team designs and establishes the farm, mobilizing community partners." },
-              { step: "4", title: "Active Management", desc: "We manage all farm operations with regular reporting to all partners." },
-              { step: "5", title: "Harvest and Returns", desc: "Commercial revenues are distributed to all partners per the agreement." },
+              {
+                step: "1",
+                title: "Initial Consultation",
+                desc: "Contact us to discuss your land, community, or investment interest.",
+              },
+              {
+                step: "2",
+                title: "Due Diligence",
+                desc: "We conduct a site assessment and structure a legally binding partnership agreement.",
+              },
+              {
+                step: "3",
+                title: "Farm Activation",
+                desc: "Our team designs and establishes the farm, mobilizing community partners.",
+              },
+              {
+                step: "4",
+                title: "Active Management",
+                desc: "We manage all farm operations with regular reporting to all partners.",
+              },
+              {
+                step: "5",
+                title: "Harvest and Returns",
+                desc: "Commercial revenues are distributed to all partners per the agreement.",
+              },
             ].map((item) => (
-              <div
-                key={item.step}
-                className="group text-center"
-              >
+              <div key={item.step} className="group text-center">
                 <span className="flex h-12 w-12 mx-auto items-center justify-center rounded-full bg-primary text-lg font-bold text-primary-foreground">
                   {item.step}
                 </span>
@@ -167,24 +219,33 @@ function PartnerWithUsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-primary py-20 text-primary-foreground">
+      <section className="bg-muted py-20">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <FadeIn direction="up">
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">
-              Book a Free Consultation
+            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+              The harvest does not wait. Neither should you.
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-foreground/80">
-              The harvest does not wait. Neither should you. Let's discuss how
-              we can turn your idle land into a productive, income-generating
-              asset.
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+              Let's discuss how we can turn your idle land into a productive,
+              income-generating asset.
             </p>
             <Link
               to="/contact"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-primary shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
             >
-              Get Started
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              Book a Free Consultation
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </Link>
           </FadeIn>

@@ -726,8 +726,6 @@ function HomePage() {
                         {siteConfig.contact.phone}
                       </p>
                     </div>
-                  </div>
-                  <div className="flex items-center gap-4">
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                       <svg
                         className="h-5 w-5 text-primary"

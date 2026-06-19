@@ -1,8 +1,9 @@
 import { n as __commonJSMin, r as __toESM, t as require_jsx_runtime } from "./assets/jsx-runtime-BuMTCWze.js";
 import { t as require_react } from "./assets/react-5VzO3yf4.js";
 import { C as createLRUCache, N as hasKeys, O as decodePath, i as routerContext, r as useRouter, t as require_react_dom, w as invariant } from "./assets/react-dom-B9kYsnq-.js";
-import { _ as rootRouteId, a as matchContext, h as isResolvedRedirect, m as isRedirect, o as CatchBoundary, p as executeRewriteInput, r as SafeFragment, s as ErrorComponent, t as Match, u as createMemoryHistory, v as isNotFound } from "./assets/Match-DZ-gYcDu.js";
-import { a as createInlineCssPlaceholderAsset, c as getScriptPreloadAttrs, d as resolveManifestCssLink, l as getStylesheetHref, o as createInlineCssStyleAsset, u as resolveManifestAssetLink } from "./assets/useMatch-EoHBaAGA.js";
+import { i as isResolvedRedirect, n as matchContext, o as rootRouteId, r as isRedirect, s as isNotFound } from "./assets/matchContext-iZ_vu40-.js";
+import { a as ErrorComponent, c as createMemoryHistory, d as executeRewriteInput, i as CatchBoundary, r as SafeFragment, t as Match } from "./assets/Match-B-QGphPG.js";
+import { a as createInlineCssStyleAsset, c as getStylesheetHref, i as createInlineCssPlaceholderAsset, l as resolveManifestAssetLink, s as getScriptPreloadAttrs, u as resolveManifestCssLink } from "./assets/atom-HSyjuv6w.js";
 import { EventEmitter } from "node:events";
 import { PassThrough, Readable, Writable } from "node:stream";
 import { ReadableStream as ReadableStream$1 } from "node:stream/web";
@@ -12586,7 +12587,7 @@ var HEADERS = { TSS_SHELL: "X-TSS_SHELL" };
 * the dev styles URL for route-scoped CSS collection.
 */
 async function getStartManifest(matchedRoutes) {
-	const { tsrStartManifest } = await import("./assets/_tanstack-start-manifest_v-DPkf28c5.js");
+	const { tsrStartManifest } = await import("./assets/_tanstack-start-manifest_v-Cskj93AE.js");
 	const startManifest = tsrStartManifest();
 	let routes = startManifest.routes;
 	routes[rootRouteId];
@@ -13727,7 +13728,7 @@ var getBaseManifest = getProdBaseManifest;
 var createEarlyHintsForRequest = createEarlyHintsCollector;
 async function loadEntries() {
 	const [routerEntry, startEntry, pluginAdapters] = await Promise.all([
-		import("./assets/router-xd3Fv3pC.js"),
+		import("./assets/router-CPcxt_6K.js"),
 		import("./assets/start-5Z2QO8AU.js"),
 		import("./assets/empty-plugin-adapters-D9UWiqvJ.js")
 	]);
