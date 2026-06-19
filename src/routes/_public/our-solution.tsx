@@ -23,7 +23,7 @@ function OurSolutionPage() {
               <div>
                 <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted shadow-2xl shadow-primary/10">
                   <img
-                    src="/images/lush.jpg"
+                    src="/images/solution-1.jpg"
                     alt="Africa's agricultural potential"
                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   />
@@ -72,8 +72,8 @@ function OurSolutionPage() {
                   about $350 billion annually. Yet, the continent needs to
                   increase its current agricultural production and food
                   availability by at least 40% with an estimated $11 billion per
-                  year in additional public and private investment to meet the UN
-                  Sustainable Development Goal of Zero Hunger by 2030.
+                  year in additional public and private investment to meet the
+                  UN Sustainable Development Goal of Zero Hunger by 2030.
                 </p>
               </div>
             </FadeIn>
@@ -81,7 +81,7 @@ function OurSolutionPage() {
               <div>
                 <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted shadow-2xl shadow-primary/10">
                   <img
-                    src="/images/about.jpg"
+                    src="/images/solution-2.jpg"
                     alt="Africa's agricultural market opportunity"
                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   />
@@ -104,12 +104,31 @@ function OurSolutionPage() {
               essential elements that no single stakeholder could achieve alone:
             </p>
           </FadeIn>
-          <Stagger staggerDelay={100} className="mt-10 grid gap-6 sm:grid-cols-2">
+          <Stagger
+            staggerDelay={100}
+            className="mt-10 grid gap-6 sm:grid-cols-2"
+          >
             {[
-              { element: "Land", contributor: "Landowners & Property Investors", what: "Undeveloped or idle arable land activated under structured agreement" },
-              { element: "Community", contributor: "Local Farming Communities", what: "Labour, local knowledge, community trust, and shared stake in outcomes" },
-              { element: "Expertise", contributor: "Farms Empire Technical Team", what: "Agronomy, farm design, crop management, and commercial operations" },
-              { element: "Market Access", contributor: "Farms Empire Commercial Division", what: "Offtaker relationships, value chain links, retail and export channels" },
+              {
+                element: "Land",
+                contributor: "Landowners & Property Investors",
+                what: "Undeveloped or idle arable land activated under structured agreement",
+              },
+              {
+                element: "Community",
+                contributor: "Local Farming Communities",
+                what: "Labour, local knowledge, community trust, and shared stake in outcomes",
+              },
+              {
+                element: "Expertise",
+                contributor: "Farms Empire Technical Team",
+                what: "Agronomy, farm design, crop management, and commercial operations",
+              },
+              {
+                element: "Market Access",
+                contributor: "Farms Empire Commercial Division",
+                what: "Offtaker relationships, value chain links, retail and export channels",
+              },
             ].map((item) => (
               <div
                 key={item.element}
@@ -118,8 +137,12 @@ function OurSolutionPage() {
                 <h3 className="text-lg font-semibold text-primary group-hover:text-primary/80 transition-colors">
                   {item.element}
                 </h3>
-                <p className="mt-1 text-sm font-medium text-muted-foreground">{item.contributor}</p>
-                <p className="mt-2 text-sm text-muted-foreground">{item.what}</p>
+                <p className="mt-1 text-sm font-medium text-muted-foreground">
+                  {item.contributor}
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {item.what}
+                </p>
               </div>
             ))}
           </Stagger>
@@ -130,16 +153,45 @@ function OurSolutionPage() {
       <section className="bg-muted py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn direction="up">
-            <h2 className="font-display text-3xl font-bold text-foreground">Our Services</h2>
+            <h2 className="font-display text-3xl font-bold text-foreground">
+              Our Services
+            </h2>
           </FadeIn>
-          <Stagger staggerDelay={80} className="mt-10 grid gap-6 md:grid-cols-2">
+          <Stagger
+            staggerDelay={80}
+            className="mt-10 grid gap-6 md:grid-cols-2"
+          >
             {[
-              { num: "1", title: "Agricultural Consultancy", desc: "Expert advisory services for individual farmers, cooperatives, agribusinesses, and government agencies seeking to optimize agricultural productivity and enterprise sustainability." },
-              { num: "2", title: "Farm Design and Setup", desc: "End-to-end farm establishment, from soil testing and crop selection to infrastructure setup, irrigation design, and operational planning." },
-              { num: "3", title: "Communal Farm Management", desc: "We actively manage farms on behalf of our landowner and community partners: handling all operational, technical, and commercial activities while delivering agreed returns." },
-              { num: "4", title: "Community Mobilization and Cooperative Development", desc: "We identify, train, and organize farming communities into productive cooperative units with clear governance, defined roles, and shared accountability structures." },
-              { num: "5", title: "Agricultural Training and Capacity Building", desc: "We equip community farmers with practical skills in modern farming techniques, post-harvest handling, cooperative management, and agricultural business fundamentals." },
-              { num: "6", title: "Investor Engagement and Land Asset Optimization", desc: "For landowners and property investors, we provide structured agricultural partnerships that generate consistent income from land awaiting development." },
+              {
+                num: "1",
+                title: "Agricultural Consultancy",
+                desc: "Expert advisory services for individual farmers, cooperatives, agribusinesses, and government agencies seeking to optimize agricultural productivity and enterprise sustainability.",
+              },
+              {
+                num: "2",
+                title: "Farm Design and Setup",
+                desc: "End-to-end farm establishment, from soil testing and crop selection to infrastructure setup, irrigation design, and operational planning.",
+              },
+              {
+                num: "3",
+                title: "Communal Farm Management",
+                desc: "We actively manage farms on behalf of our landowner and community partners: handling all operational, technical, and commercial activities while delivering agreed returns.",
+              },
+              {
+                num: "4",
+                title: "Community Mobilization and Cooperative Development",
+                desc: "We identify, train, and organize farming communities into productive cooperative units with clear governance, defined roles, and shared accountability structures.",
+              },
+              {
+                num: "5",
+                title: "Agricultural Training and Capacity Building",
+                desc: "We equip community farmers with practical skills in modern farming techniques, post-harvest handling, cooperative management, and agricultural business fundamentals.",
+              },
+              {
+                num: "6",
+                title: "Investor Engagement and Land Asset Optimization",
+                desc: "For landowners and property investors, we provide structured agricultural partnerships that generate consistent income from land awaiting development.",
+              },
             ].map((service) => (
               <div
                 key={service.num}
@@ -149,8 +201,12 @@ function OurSolutionPage() {
                   {service.num}
                 </span>
                 <div>
-                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">{service.title}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{service.desc}</p>
+                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {service.desc}
+                  </p>
                 </div>
               </div>
             ))}

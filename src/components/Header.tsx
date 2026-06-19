@@ -6,6 +6,7 @@ const aboutItems = [
   { label: "Who We Are", href: "/who-we-are" },
   { label: "Our Story", href: "/our-story" },
   { label: "Partner With Us", href: "/partner-with-us" },
+  { label: "FAQs", href: "/faqs" },
 ];
 
 const resourcesItems = [

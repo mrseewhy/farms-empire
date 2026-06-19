@@ -5,7 +5,7 @@ interface PageHeroProps {
 
 export function PageHero({ title, subtitle }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-primary py-16 text-primary-foreground sm:py-20 lg:py-24">
+    <section className="relative overflow-hidden bg-black py-16 text-primary-foreground sm:py-20 lg:py-24">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: "url('/images/header.jpg')" }}
@@ -15,7 +15,7 @@ export function PageHero({ title, subtitle }: PageHeroProps) {
           <h1 className="font-display text-3xl font-bold sm:text-4xl lg:text-5xl xl:text-6xl">
             {title}
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
             {subtitle}
           </p>
         </div>

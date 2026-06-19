@@ -1,161 +1,24 @@
 export const blogPosts = [
   {
-    id: "communal-farming-future",
-    title: "Why Communal Farming Is the Future of African Agriculture",
-    excerpt: "Individual farming has its limits. Discover why the communal model is proving to be more productive, resilient, and commercially sustainable across Africa.",
-    date: "May 15, 2026",
-    category: "Insights",
-    readTime: "5 min read",
-    img: "/images/about.jpg",
-    content: `
-      <p>Africa's agricultural sector stands at a crossroads. With over 60% of the world's uncultivated arable land and a growing population to feed, the continent cannot afford to rely on outdated, individual farming models that limit productivity and leave smallholder farmers vulnerable.</p>
-
-      <p>At Farms Empire, we have seen firsthand how communal farming transforms not just yields, but entire communities. When farmers come together under a structured cooperative model, the results speak for themselves: higher productivity, shared risk, stronger market access, and deeper community ownership.</p>
-
-      <h2>Why Individual Farming Has Its Limits</h2>
-      <p>Individual farming places the entire burden of capital, labor, risk, and market access on a single person or household. This model works in some contexts, but across much of Africa, it creates vulnerabilities that are hard to overcome alone:</p>
-      <ul>
-        <li>Limited access to capital for equipment, seeds, and irrigation</li>
-        <li>High vulnerability to weather, pests, and market fluctuations</li>
-        <li>Lack of bargaining power in local and regional markets</li>
-        <li>Isolation from technical expertise and modern farming techniques</li>
-      </ul>
-
-      <h2>The Communal Advantage</h2>
-      <p>Communal farming flips this model on its head. By pooling land, labor, resources, and expertise, communities create farming enterprises that are greater than the sum of their parts. The communal model distributes risk, multiplies productivity, and builds the kind of deep ownership that keeps farms productive season after season.</p>
-
-      <p>Our Pioneer Community Farm Initiative in Ogun State is a living example. Three communities came together with Farms Empire to activate 50 hectares of idle land. Today, 120 farming families earn consistent income, and the farm produces over 200 tonnes of food annually.</p>
-
-      <h2>A Model Built for Africa</h2>
-      <p>The Ujamaa philosophy taught us that communities working together always produce more than any individual working alone. Farms Empire has taken this principle and built a modern, commercially viable agricultural model around it. It is not idealism. It is strategy. And it works.</p>
-    `,
+    "id": "six-years-of-growing-together",
+    "title": "Six Years of Growing Together: How Farms Empire Pioneered Communal Farming in Africa",
+    "excerpt": "How communal farming stopped being a forgotten tradition and became a modern engine for food security and economic empowerment across Africa.",
+    "date": "June 10, 2026",
+    "category": "Impact Stories",
+    "readTime": "8 min read",
+    "img": "/images/blog/article-1/1.jpeg",
+    "author": "Cletus Ifeanyi",
+    "content": "There is a particular kind of silence that settles over unused land. No movement, no harvest, no income: just potential, waiting. Six years ago, Farms Empire set out to break that silence across Africa, one community, one partnership, one harvest at a time. Today, that mission has grown into one of the continent's most distinctive agricultural movements: a model where land, labour, and expertise come together not as separate forces, but as true partners in shared prosperity.\n\nThis is the story of how communal farming stopped being a forgotten tradition and became a modern engine for food security and economic empowerment.\n\n## The Problem That Started It All\n\n<img src=\"/images/blog/article-1/5.jpeg\" class=\"w-full rounded-xl\" />\n\nSix years ago, the numbers told an uncomfortable story. Africa held vast stretches of arable, uncultivated land which by some estimates, more than half of the world's remaining farmable acreage. Yet hunger and food insecurity remained stubbornly persistent across the continent. The disconnect was not a shortage of land or a shortage of willing hands. It was a shortage of systems; the financing, the technical expertise, the market access, and the trust required to turn idle land into productive farms.\n\nLandowners had assets sitting dormant, often for years, waiting on development plans that never materialized. Communities had people ready to work the land but lacked the capital, training, and market connections to do so profitably. Farms Empire was built to close that gap, not by replacing either side of the equation, but by uniting them.\n\n## Building the Communal Model From the Ground Up\n\nThe philosophy behind Farms Empire borrows from a concept as old as African civilization itself: Ujamaa, the Swahili word for \"familyhood,\" popularized by Julius Nyerere as a framework for collective economic development. The idea is simple but powerful: communities that pool land, labour, and resources together consistently outperform individuals working in isolation.\n\nFarms Empire took that principle and built a structured, modern business model around it. Landowners contribute land. Communities contribute labour and local knowledge. Farms Empire contributes the agronomic expertise, farm management, and commercial market access needed to turn that combination into a functioning, profitable enterprise. Every harvest, the returns are shared: not as charity, but as a structured partnership where every contributor has a stake in the outcome.\n\nIt was a model built on a simple bet: that shared ownership produces shared commitment, and shared commitment produces results that no single actor could achieve alone.\n\n## Six Years of Measurable Impact\n\n<img src=\"/images/blog/article-1/2.jpeg\" class=\"w-full rounded-xl\" />\n\nWhat began as a handful of pilot partnerships has, over six years, grown into a continental case study in what communal agriculture can achieve when it is properly resourced and professionally managed.\n\n**Land Activated.** Hundreds of hectares of previously idle land has been converted into active, productive farmland. Landowners who once earned nothing from their property now receive consistent returns, while the land itself appreciates in commercial value through active agricultural use.\n\n**Communities Empowered.** Across dozens of farming communities, hundreds of families have moved from subsistence uncertainty to structured agricultural income. Cooperative governance structures, introduced and supported by Farms Empire, have given these communities a formal stake in farm ownership and decision-making, but a share of the enterprise itself.\n\n**Food Produced.** Hundreds of tonnes of staple crops have moved from Farms Empire-managed farms into local markets each year, directly addressing food availability in the communities where these farms operate.\n\n**Women at the Centre.** Recognizing that women constitute the overwhelming majority of Africa's smallholder farmers yet receive a disproportionately small share of agricultural support, Farms Empire built dedicated programs specifically for women's agricultural cooperatives; providing land access, training, and direct market linkages that have measurably increased household incomes among participants.\n\n**The Next Generation.** Through school farm partnerships and youth agripreneurship programs, Farms Empire has introduced practical agricultural education and entrepreneurship training to hundreds of young people — planting, quite literally, the seeds of the next generation of African agricultural leaders.\n\n## Aligning With a Global Mission\n\n<img src=\"/images/blog/article-1/2.jpeg\" class=\"w-full rounded-xl\" />\n\nNone of this work has happened in isolation from the world's broader development goals. Farms Empire has consciously aligned every project, every partnership, and every farm with the United Nations Sustainable Development Goal 2: Zero Hunger. It is an ambitious global target, and one that Africa, despite holding the resources to lead the way, has struggled to meet at the pace required.\n\nThe math is sobering. Africa's agricultural market is valued at roughly $350 billion annually, yet the continent must increase production by at least 40% to meet global food security targets by 2030, requiring an estimated $11 billion in additional investment every single year. Closing that gap will not happen through policy documents and international conferences alone. It will happen through models like communal farming which are scalable, replicable, and rooted in the people who will benefit most directly from their success.\n\n## Lessons Learned in the Field\n\n<img src=\"/images/blog/article-1/4.jpeg\" class=\"w-full rounded-xl\" />\n\nSix years of operating directly in Africa's agricultural terrain has taught lessons that no business plan could have anticipated in advance. Land tenure complexities that don't appear in legal textbooks. Logistics challenges that delay harvests in ways no spreadsheet predicts. The slow, patient work of earning a community's trust — not through promises, but through consistent presence and shared results season after season.\n\nEvery one of those challenges became a lesson absorbed into the model. What Farms Empire operates today is not the same model it launched with six years ago, field-tested system shaped directly by the realities of doing agricultural business in Africa. That refinement is, in many ways, the real achievement of the past six years: not a single perfect idea, but a model strengthened by direct experience until it became dependable.\n\n## What the Next Six Years Look Like\n\nThe work is far from finished. Africa's idle land remains a vastly underutilized resource, and the hunger statistics that motivated Farms Empire's founding six years ago remain a daily reality for too many communities. But the model has proven something important: that communal farming, executed with the right expertise and the right partnerships, is not a romantic throwback to a pre-industrial past. It is a genuinely modern, scalable, commercially viable solution to one of Africa's most persistent challenges.\n\nThe next chapter involves expanding to new states and new communities, deepening partnerships with landowners and institutional investors who recognize the value of idle land activation, and continuing to refine the cooperative structures that have made existing farms sustainable well beyond their first season.\n\nSix years ago, the question was whether communities could grow together. Today, the evidence across hundreds of hectares, hundreds of families, and hundreds of tonnes of food says, unmistakably, that they can."
   },
   {
-    id: "landowner-partnership-guide",
-    title: "5 Things Landowners Should Know Before Partnering with a Farm Enterprise",
-    excerpt: "Thinking about putting your idle land to work? Here are five key considerations every landowner should understand before entering an agricultural partnership.",
-    date: "April 28, 2026",
-    category: "Partnerships",
-    readTime: "4 min read",
-    img: "/images/land.jpg",
-    content: `
-      <p>Across Nigeria and Africa, millions of hectares of arable land sit idle. Urban development pressures, inheritance disputes, and simple uncertainty have left many landowners sitting on assets that generate nothing. But what if your land could earn you income while you wait for development?</p>
-
-      <p>Agricultural partnerships offer a structured way to activate idle land. But before you sign any agreement, here are five things every landowner should understand.</p>
-
-      <h2>1. Understand the Partnership Structure</h2>
-      <p>A good agricultural partnership is governed by a legally binding agreement that clearly defines roles, responsibilities, timelines, and return structures. At Farms Empire, we ensure every landowner understands exactly what they are agreeing to before any activity begins.</p>
-
-      <h2>2. Know Your Rights</h2>
-      <p>Your land title and ownership rights remain fully with you throughout the partnership. A well-structured agreement protects your asset while allowing it to generate income.</p>
-
-      <h2>3. Ask About Operational Burden</h2>
-      <p>One of the key benefits of a managed agricultural partnership is that you do not need farming experience. The right partner will handle everything from farm design to harvest and sales.</p>
-
-      <h2>4. Understand How Returns Work</h2>
-      <p>Returns are typically calculated based on commercial revenues from each harvest cycle, minus agreed operational costs. The full structure should be documented before any farm activity begins.</p>
-
-      <h2>5. Verify Transparency</h2>
-      <p>You should have access to regular farm performance reports and the ability to visit your land at any time. Transparency is the foundation of trust in any agricultural partnership.</p>
-    `,
-  },
-  {
-    id: "women-farmers-oyo-state",
-    title: "How We Trained 85 Women Farmers in Oyo State",
-    excerpt: "A look inside our Women's Agricultural Cooperative Development Programme and how it is transforming household food security and economic empowerment.",
-    date: "April 10, 2026",
-    category: "Impact Stories",
-    readTime: "6 min read",
-    img: "/images/lush.jpg",
-    content: `
-      <p>Women constitute over 60% of Africa's smallholder farmers, yet they receive disproportionately less support, resources, and income from agriculture. This gap is not just unfair, it is economically inefficient. When women farmers thrive, entire communities prosper.</p>
-
-      <p>Farms Empire launched the Women's Agricultural Cooperative Development Programme in Oyo State to close this gap. The results have been transformative.</p>
-
-      <h2>The Programme</h2>
-      <p>We brought together 85 women farmers from communities across Oyo State, providing land access, full farm setup, cooperative governance training, and direct market linkages to institutional buyers. The women now operate as a formally registered cooperative, collectively owning equipment and jointly managing production.</p>
-
-      <h2>The Impact</h2>
-      <ul>
-        <li>85 women farmers with structured income from agriculture</li>
-        <li>Cooperative formally registered and fully self-governing</li>
-        <li>Average household income increased by 40% among participants</li>
-        <li>3 institutional offtakers contracted for consistent market access</li>
-      </ul>
-
-      <h2>Beyond Income</h2>
-      <p>The impact goes beyond economics. Women in the programme report greater decision-making power within their households, improved nutrition for their families, and a renewed sense of purpose and community. This is what gender-inclusive agricultural development looks like in practice.</p>
-    `,
-  },
-  {
-    id: "understanding-sdg-2",
-    title: "Understanding SDG 2: What Zero Hunger Really Means for Africa",
-    excerpt: "SDG 2 is not just about feeding people today. It is about building the systems that make hunger permanently impossible. Here is what that looks like in practice.",
-    date: "March 22, 2026",
-    category: "Policy",
-    readTime: "7 min read",
-    img: "/images/hero.jpg",
-    content: `
-      <p>United Nations Sustainable Development Goal 2 calls on the world to end hunger, achieve food security and improved nutrition, and promote sustainable agriculture by 2030. For Africa, this goal carries particular urgency.</p>
-
-      <p>Over 250 million Africans are currently classified as food insecure, the highest proportion of any continent. Yet Africa holds 60% of the world's uncultivated arable land. The gap between potential and reality is not a resource problem. It is a systems problem.</p>
-
-      <h2>What SDG 2 Requires</h2>
-      <p>SDG 2 is not simply about feeding people today. It is about building the agricultural systems, inclusive institutions, and economic structures that make hunger permanently impossible. This means doubling smallholder productivity, ensuring sustainable food production systems, and correcting agricultural market distortions.</p>
-
-      <h2>How Farms Empire Contributes</h2>
-      <p>Every project we undertake is aligned with SDG 2 targets. Our communal farms increase locally grown food availability. Our training programmes boost smallholder productivity. Our market linkages ensure fair returns for farmers. And our partnerships mobilize private capital into rural agricultural systems.</p>
-
-      <h2>A Call to Action</h2>
-      <p>Africa's food and agricultural market is valued at approximately $350 billion annually. The continent needs to increase agricultural production by at least 40% to meet SDG 2 by 2030. This requires an estimated $11 billion per year in additional investment. The opportunity is massive. The need is urgent. And the solution is already being built, farm by farm, community by community.</p>
-    `,
-  },
-  {
-    id: "landowner-journey",
-    title: "From Idle Land to Active Returns: A Landowner's Journey",
-    excerpt: "Chief Adewale Ogunleye shares his experience of partnering with Farms Empire and how 30 hectares of idle land became a source of consistent income.",
-    date: "March 5, 2026",
-    category: "Partner Stories",
-    readTime: "5 min read",
-    img: "/images/about.jpg",
-    content: `
-      <p>Chief Adewale Ogunleye owned 30 hectares of land in Ogun State. For years, the land sat idle, waiting for a development plan that never materialized. The property taxes continued, but the land generated nothing.</p>
-
-      <p>"I knew the land had value," Chief Ogunleye recalls. "But I had no time, no expertise, and no connections to do anything with it. It was just sitting there, losing value every year."</p>
-
-      <h2>The Partnership</h2>
-      <p>In 2023, Chief Ogunleye partnered with Farms Empire to activate his land through our communal farming model. The process was straightforward: a site assessment, a legally structured land use agreement, and then Farms Empire handled everything else.</p>
-
-      <h2>The Results</h2>
-      <p>Within the first season, Chief Ogunleye began receiving returns from rice farming operations on his land. The farm now employs community members, produces food for local markets, and generates consistent quarterly returns for the landowner.</p>
-
-      <p>"I did not have to learn farming. I did not have to manage anything. I just signed the agreement, and Farms Empire did the rest. My land is finally working for me."</p>
-
-      <h2>A Model for Others</h2>
-      <p>Chief Ogunleye's story is not unique. Across Nigeria, landowners are discovering that idle land does not have to stay idle. With the right partnership, it can become a productive, income-generating asset that benefits everyone involved.</p>
-    `,
-  },
-  {
-    id: "ujamaa-modern-agriculture",
-    title: "The Ujamaa Philosophy and Modern Agricultural Enterprise",
-    excerpt: "How a Swahili philosophy from the 1960s is guiding one of Africa's most effective communal farming models today.",
-    date: "February 18, 2026",
-    category: "Thought Leadership",
-    readTime: "6 min read",
-    img: "/images/hero.jpg",
-    content: `
-      <p>Julius Nyerere, the founding father of Tanzania, championed a philosophy called Ujamaa. The word means "familyhood" in Swahili, and its core belief is simple: a community which works together, owns together, and grows together will always produce more than any individual working alone.</p>
-
-      <p>When Nyerere introduced Ujamaa in the 1960s, it was both a political and economic vision for post-colonial Africa. Today, decades later, the philosophy is finding new life in one of Africa's most effective communal farming models.</p>
-
-      <h2>Ujamaa as Strategy</h2>
-      <p>At Farms Empire, we do not view Ujamaa as history. We view it as strategy. The communal model is why our farms are more productive, more resilient, and more commercially sustainable than conventional alternatives. It distributes risk across many hands. It multiplies labor and resources. And it builds the deep community ownership that keeps farms productive long after any external support has withdrawn.</p>
-
-      <h2>The Competitive Advantage</h2>
-      <p>For investors, Ujamaa is not idealism. It is competitive advantage. The communal model is why our community partners protect and invest in the farms they co-own. And it is why Farms Empire is able to offer something rare in African agriculture: a model that is both deeply human and consistently profitable.</p>
-
-      <h2>Communities Grow Empires</h2>
-      <p>Nyerere was right. When communities work together, they accomplish what no individual can alone. Farms Empire is proof of that principle. And we are just getting started.</p>
-    `,
-  },
+    "id": "pay-small-small-feast-big",
+    "title": "Pay Small-Small Now, Feast Big Later: The Smart Way to Beat the December Inflation Rush!",
+    "excerpt": "Secure your holiday feast without breaking the bank. Lock in today's affordable farm prices and pay gradually over 6 months.",
+    "date": "June 5, 2026",
+    "category": "Programs",
+    "readTime": "6 min read",
+    "img": "/images/blog/article-2/1.jpeg",
+    "author": "Mary Osibanjo",
+    "content": "Let's face it: December in Africa is beautiful, but it can be incredibly stressful for your wallet. Every single year, the same thing happens. As soon as December 1st hits, the prices of food items—especially livestock like goats, chickens, and cows—skyrocket out of reach. What cost N40,000 in June can easily jump to N90,000 or more by Christmas week.\n\nBetween buying clothes for the kids, traveling home, and handling festive hosting duties, the last thing you need is the stress of overpaying for festive meat.\n\nThis year, Farms Empire Africa is giving you a bulletproof way to secure your holiday feast without breaking the bank. Introducing the **Christmas & New Year Livestock Pay-Small-Small Plan**—the most reliable, stress-free micro-payment agricultural plan designed to help you lock in today's affordable farm prices and pay gradually over 6 months!\n\n## The Big Problem: The December Price Trap\n\nIf you wait until December to buy your festive livestock, you are walking into a financial trap. Supply chains tighten, fuel prices shift, and demand explodes. The exact cost of livestock will likely be triple the amount you would have paid by December if you start planning now!\n\nBy subscribing to the Farms Empire Pay-Small-Small plan, you bypass the middleman and inflation entirely. You subscribe today, pay an easy monthly installment, and our professional farmers raise, fatten, and secure your livestock specifically in your name.\n\n## Choose Your Feast: The 6-Month Flexible Plans\n\n<img src=\"/images/blog/article-2/2.jpeg\" class=\"w-full rounded-xl\" />\n\nWe have structured our installment packages to fit every budget. Whether you want a single massive catfish for a family barbecue or a quarter share of a massive bull, we have a tier for you:\n\n<div class=\"overflow-x-auto\">\n  <table class=\"w-full text-sm\">\n    <thead>\n      <tr class=\"border-b border-border\">\n        <th class=\"py-3 pr-4 text-left font-semibold text-foreground\">Plan</th>\n        <th class=\"py-3 pr-4 text-left font-semibold text-foreground\">\n          Monthly Installment (6 Months)\n        </th>\n        <th class=\"py-3 text-left font-semibold text-foreground\">\n          Your Festive Reward at Harvest\n        </th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr class=\"border-b border-border\">\n        <td class=\"py-3 pr-4 font-semibold text-foreground\">CATFISH PLAN</td>\n        <td class=\"py-3 pr-4 text-muted-foreground\">N1,500 / month</td>\n        <td class=\"py-3 text-muted-foreground\">\n          One massive, \"bull-size\" farm-fresh catfish.\n        </td>\n      </tr>\n      <tr class=\"border-b border-border\">\n        <td class=\"py-3 pr-4 font-semibold text-foreground\">CHICKEN PLAN</td>\n        <td class=\"py-3 pr-4 text-muted-foreground\">N4,000 / month</td>\n        <td class=\"py-3 text-muted-foreground\">\n          One large, fully matured chicken, fattened explicitly for high meat\n          production.\n        </td>\n      </tr>\n      <tr class=\"border-b border-border\">\n        <td class=\"py-3 pr-4 font-semibold text-foreground\">TURKEY PLAN</td>\n        <td class=\"py-3 pr-4 text-muted-foreground\">N15,000 / month</td>\n        <td class=\"py-3 text-muted-foreground\">\n          One premium, large, fully matured festive turkey.\n        </td>\n      </tr>\n      <tr class=\"border-b border-border\">\n        <td class=\"py-3 pr-4 font-semibold text-foreground\">GOAT PLAN</td>\n        <td class=\"py-3 pr-4 text-muted-foreground\">N20,000 / month</td>\n        <td class=\"py-3 text-muted-foreground\">\n          One large, fully matured goat, organically raised and fattened.\n        </td>\n      </tr>\n      <tr>\n        <td class=\"py-3 pr-4 font-semibold text-foreground\">COW PLAN</td>\n        <td class=\"py-3 pr-4 text-muted-foreground\">N35,000 / month</td>\n        <td class=\"py-3 text-muted-foreground\">\n          One substantial part of a massive cow shared among 4 persons (all\n          prime cuts inclusive).\n        </td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n\n## How It Works: Simple, Transparent, and Pressure-Free\n\n<img src=\"/images/blog/article-2/3.jpeg\" class=\"w-full rounded-xl\" />\n\nWe have stripped away all the complex paperwork to make this as seamless as possible:\n\n1. **Pick and Subscribe:** Choose the specific plan(s) that match your household or entertainment needs for the holidays.\n2. **Pay Monthly:** No heavy, stressful lump sums. Just standard, predictable monthly installments that won't disrupt your daily business cash flow.\n3. **We Raise & Reserve:** Your livestock isn't sitting in a cold storage unit. It is actively raised, fed, and monitored across our standard partner farms under your specific subscription ID.\n4. **Festive Harvest:** When Christmas and New Year arrive, your livestock is ready for pick-up or custom delivery!\n\n## Institutional Backing and Complete Peace of Mind\n\n<img src=\"/images/blog/article-1/4.jpeg\" class=\"w-full rounded-xl\" />\n\nFarms Empire Africa operates with absolute transparency. This plan is fully backed by credible international development partners, local agricultural facilities, and verified farming networks, including:\n\n- Agri-Business Facility for Africa\n- Tricycle Gardens\n- Laurydon\n- CHUDILLS FARMS\n- Ehis Farms Atingi\n- IYF\n- GIZ\n\nWe are so confident in our operational ecosystem that we back this program with an ironclad **MONEY-BACK GUARANTEE!** Your money is safe, tracked, and working directly for your food security.\n\n## Corporate, Church, and Group Packages Available\n\nAre you a member of a staff welfare committee, a church society, an association, or a social club? Don't let your members carry the heavy financial burden of festive shopping alone in December.\n\nFarms Empire Africa offers exclusive, customized group packages for corporate organizations, clubs, and large unions. Reach out to our business team to structure a customized cluster subscription for your members today.\n\n## Where to Find Us: Our Farming and Pickup Hubs\n\n<img src=\"/images/blog/article-2/5.jpeg\" class=\"w-full rounded-xl\" />\n\nWith distribution and farming structures across Rivers State and Lagos State, you can easily monitor your investment or pick up your livestock at any of our official locations:\n\n- **Abuloma Hub:** Federal Government Girls' College Road, Abuloma, Port Harcourt, Rivers State.\n- **Rumuepirikom Hub:** Well 8 Close, off Shell Location Road, Rumuepirikom, Port Harcourt, Rivers State.\n- **Oyigbo Hub:** 7 David Lane, Poultry Road, Oyigbo West, Oyigbo, Rivers State.\n- **Afam Hub:** Chidi Akaya Compound, by Old Police Station, Beside Anglican Church, Okoloma Afam, Rivers State.\n- **Lagos Hub:** Lagos State Farm Estate, Odogunyan, Ikorodu, Lagos State.\n\n## Secure Your Slot Today!\n\nSlots are strictly limited based on our available farm capacity for the festive cycle. Once our pens and ponds are fully allocated for the season, subscriptions will close. Don't look back in December and wish you took action today.\n\n**Terms & Conditions:** Free live pick-up directly from any of our designated hubs. Extra minimal costs apply only if you require professional slaughtering, cleaning, smoking, deep-freezing, or direct home delivery.\n\n**Take Action Now:** Call or send a WhatsApp message directly to **0912 080 0107** to lock in your festive livestock today. Pay small-small, and feast big!"
+  }
 ];

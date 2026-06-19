@@ -23,7 +23,7 @@ function PartnerWithUsPage() {
               <div>
                 <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted shadow-2xl shadow-primary/10">
                   <img
-                    src="/images/land.jpg"
+                    src="/images/plot.jpg"
                     alt="Partner with Farms Empire"
                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   />
