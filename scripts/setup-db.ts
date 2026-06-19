@@ -104,9 +104,9 @@ async function runDrizzleMigrations(
 ) {
   console.log("📦 Step 2: Running Drizzle migrations...");
 
-  const { migrate } = await import("drizzle-kit/libsql");
   const { drizzle } = await import("drizzle-orm/libsql");
   const schema = await import("../src/db/schema");
+  const { migrate } = await import("drizzle-orm/libsql/migrator");
 
   const db = drizzle(client, { schema });
 
@@ -174,7 +174,7 @@ async function seedAdmin(client: ReturnType<typeof createClient>) {
 // ────────────────────────────────────────────────────────
 
 async function main() {
-  console.log("🌾 Farms Empire — Database Setup");
+   console.log("🌾 Farms Empire - Database Setup");
   console.log(`   Database: ${TURSO_URL}`);
   console.log("");
 

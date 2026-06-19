@@ -4,7 +4,7 @@
  * Uses the Web Crypto API (available in Cloudflare Workers) to generate
  * SHA-1 signatures for secure client-to-Cloudinary uploads.
  *
- * This keeps image processing off the Worker — the client uploads directly
+   * This keeps image processing off the Worker - the client uploads directly
  * to Cloudinary using the signed preset.
  */
 

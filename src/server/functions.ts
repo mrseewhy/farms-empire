@@ -18,7 +18,7 @@ export const getCloudinaryUploadSignature = createServerFn({
     if (!input.folder || typeof input.folder !== "string") {
       throw new AppError(400, "INVALID_INPUT", "Folder is required.");
     }
-    // Sanitize folder name — only allow alphanumeric, hyphens, underscores, slashes
+     // Sanitize folder name - only allow alphanumeric, hyphens, underscores, slashes
     if (!/^[a-zA-Z0-9_/]+$/.test(input.folder)) {
       throw new AppError(
         400,

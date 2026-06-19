@@ -60,7 +60,7 @@ export async function requireAdmin(headers: Headers): Promise<AuthSession> {
 }
 
 /**
- * Optional session extraction — returns null if unauthenticated.
+   * Optional session extraction - returns null if unauthenticated.
  *
  * Use for public routes that optionally show different content
  * based on auth state (e.g., showing a "Dashboard" link).

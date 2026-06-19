@@ -41,7 +41,7 @@ async function seed() {
   const userId = crypto.randomUUID();
   const now = new Date();
 
-  // Insert user record (no password column — Better Auth stores passwords in account table)
+   // Insert user record (no password column - Better Auth stores passwords in account table)
   await client.execute({
     sql: `INSERT INTO user (id, name, email, "emailVerified", role, createdAt, updatedAt)
           VALUES (?, ?, ?, ?, ?, ?, ?)`,

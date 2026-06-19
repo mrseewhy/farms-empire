@@ -1,4 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { PageHero } from "../../components/PageHero";
+import { FadeIn } from "../../components/FadeIn";
+import { Stagger } from "../../components/Stagger";
 
 export const Route = createFileRoute("/_public/partner-with-us")({
   component: PartnerWithUsPage,
@@ -7,40 +10,68 @@ export const Route = createFileRoute("/_public/partner-with-us")({
 function PartnerWithUsPage() {
   return (
     <main className="min-h-screen">
-      {/* Hero */}
-      <section className="bg-primary py-16 text-primary-foreground">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="font-display text-4xl sm:text-5xl">Partner With Us</h1>
-          <p className="mt-4 text-lg text-primary-foreground/80">
-            Your Land. Our Expertise. One Harvest. Infinite Potential.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Partner With Us"
+        subtitle="Your land, our expertise, one harvest. Turn idle land into a productive, income-generating agricultural asset."
+      />
 
       {/* Intro */}
-      <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="prose prose-lg max-w-none">
-          <p className="lead text-xl text-muted-foreground">
-            If you are not earning from your land, someone else is. Your land may
-            be sitting idle, but your wealth does not have to. Partner with Farms
-            Empire today, put your undeveloped land to work through communal
-            farming, and watch it generate massive returns while you wait for
-            development.
-          </p>
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <FadeIn direction="left">
+              <div>
+                <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted shadow-2xl shadow-primary/10">
+                  <img
+                    src="/images/land.jpg"
+                    alt="Partner with Farms Empire"
+                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn direction="right">
+              <div>
+                <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+                  If You Are Not Earning From Your Land, Someone Else Is!
+                </h2>
+                <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+                  Your land may be sitting idle, but your wealth does not have
+                  to. Partner with Farms Empire today, put your undeveloped land
+                  to work through communal farming, and watch it generate massive
+                  returns while you wait for development.
+                </p>
+                <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+                  Don't let your greatest asset sleep, let it grow.
+                </p>
+                <Link
+                  to="/contact"
+                  className="group mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground shadow-md transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  Request a Call
+                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
       {/* Who Should Partner */}
-      <section className="bg-muted py-16">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl text-foreground">
-            Who Should Partner With Us?
-          </h2>
-          <div className="mt-8 space-y-6">
+      <section className="bg-muted py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <FadeIn direction="up">
+            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+              Who Should Partner With Us?
+            </h2>
+          </FadeIn>
+          <Stagger staggerDelay={100} className="mt-10 grid gap-6 md:grid-cols-2">
             {[
               {
                 title: "Landowners and Property Investors",
-                desc: "You own land in Nigeria or across Africa. It may be awaiting development, caught in planning processes, or simply lying idle. Farms Empire will partner with you to activate your land through our communal farming model; managing everything from farm design and community mobilization to harvest operations and commercial sales.",
+                desc: "You own land in Nigeria or across Africa. It may be awaiting development, caught in planning processes, or simply lying idle. Farms Empire will partner with you to activate your land through our communal farming model.",
                 benefits: [
                   "A legally structured land use agreement with clear terms and return structures",
                   "Zero operational burden; Farms Empire manages all farm operations end to end",
@@ -63,23 +94,32 @@ function PartnerWithUsPage() {
               },
               {
                 title: "Impact Investors and Development Finance Partners",
-                desc: "Agriculture is Africa's most impactful investment, generating returns in financial yield, food security, employment, community resilience, and SDG alignment simultaneously.",
+                desc: "Agriculture is Africa's most impactful investment, generating returns in financial yield, food security, employment, community resilience, and SDG alignment simultaneously. Farms Empire offers structured investment opportunities with clear impact metrics and commercial return frameworks.",
                 benefits: [],
               },
               {
                 title: "Government and Development Agencies",
-                desc: "Partner with Farms Empire to design and deliver community agricultural development programs that create measurable impact at scale.",
+                desc: "Partner with Farms Empire to design and deliver community agricultural development programs that create measurable impact at scale. We bring field-level expertise, community trust, and operational capacity to government agricultural initiatives.",
                 benefits: [],
               },
             ].map((partner) => (
-              <div key={partner.title} className="rounded-lg border border-border bg-card p-6">
-                <h3 className="text-lg font-semibold text-foreground">{partner.title}</h3>
-                <p className="mt-2 text-muted-foreground">{partner.desc}</p>
+              <div
+                key={partner.title}
+                className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20"
+              >
+                <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                  {partner.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {partner.desc}
+                </p>
                 {partner.benefits.length > 0 && (
-                  <ul className="mt-4 space-y-2">
+                  <ul className="mt-4 flex-1 space-y-2">
                     {partner.benefits.map((benefit) => (
                       <li key={benefit} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <span className="mt-1 text-primary">✓</span>
+                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
                         {benefit}
                       </li>
                     ))}
@@ -87,49 +127,67 @@ function PartnerWithUsPage() {
                 )}
               </div>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl text-foreground">
-          How the Partnership Works
-        </h2>
-        <div className="mt-8 space-y-4">
-          {[
-            { step: "1", title: "Initial Consultation", desc: "Contact us to discuss your land, community, or investment interest. We assess your situation and identify the best partnership model for you." },
-            { step: "2", title: "Due Diligence and Agreement", desc: "We conduct a site assessment and structure a legally binding partnership agreement protecting all parties with clearly defined returns and responsibilities." },
-            { step: "3", title: "Farm Activation", desc: "Our team designs and establishes the farm, mobilizing community partners, setting up infrastructure, and beginning the first production cycle." },
-            { step: "4", title: "Active Management", desc: "We manage all farm operations with regular reporting on productivity, financials, and impact metrics delivered to all partners." },
-            { step: "5", title: "Harvest and Returns", desc: "At every harvest, commercial revenues are distributed to all partners per the agreement. You earn your return. The community earns its income." },
-          ].map((item) => (
-            <div key={item.step} className="flex gap-4 rounded-lg border border-border bg-card p-6">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-lg font-semibold text-primary-foreground">
-                {item.step}
-              </span>
-              <div>
-                <h3 className="font-semibold text-foreground">{item.title}</h3>
-                <p className="mt-1 text-muted-foreground">{item.desc}</p>
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <FadeIn direction="up">
+            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+              How the Partnership Works
+            </h2>
+          </FadeIn>
+          <Stagger staggerDelay={80} className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+            {[
+              { step: "1", title: "Initial Consultation", desc: "Contact us to discuss your land, community, or investment interest." },
+              { step: "2", title: "Due Diligence", desc: "We conduct a site assessment and structure a legally binding partnership agreement." },
+              { step: "3", title: "Farm Activation", desc: "Our team designs and establishes the farm, mobilizing community partners." },
+              { step: "4", title: "Active Management", desc: "We manage all farm operations with regular reporting to all partners." },
+              { step: "5", title: "Harvest and Returns", desc: "Commercial revenues are distributed to all partners per the agreement." },
+            ].map((item) => (
+              <div
+                key={item.step}
+                className="group text-center"
+              >
+                <span className="flex h-12 w-12 mx-auto items-center justify-center rounded-full bg-primary text-lg font-bold text-primary-foreground">
+                  {item.step}
+                </span>
+                <h3 className="mt-4 font-bold text-foreground group-hover:text-primary transition-colors text-sm">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                  {item.desc}
+                </p>
               </div>
-            </div>
-          ))}
+            ))}
+          </Stagger>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-primary py-16 text-primary-foreground">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl">Book a Free Consultation</h2>
-          <p className="mt-4 text-lg text-primary-foreground/80">
-            The harvest does not wait. Neither should you.
-          </p>
-          <Link
-            to="/contact"
-            className="mt-8 inline-block rounded-md bg-white px-8 py-3 text-sm font-semibold text-primary transition-colors hover:bg-white/90"
-          >
-            Get Started
-          </Link>
+      <section className="bg-primary py-20 text-primary-foreground">
+        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+          <FadeIn direction="up">
+            <h2 className="font-display text-3xl font-bold sm:text-4xl">
+              Book a Free Consultation
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-foreground/80">
+              The harvest does not wait. Neither should you. Let's discuss how
+              we can turn your idle land into a productive, income-generating
+              asset.
+            </p>
+            <Link
+              to="/contact"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-primary shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
+            >
+              Get Started
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </FadeIn>
         </div>
       </section>
     </main>

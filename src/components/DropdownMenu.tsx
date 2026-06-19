@@ -37,7 +37,7 @@ export function DropdownMenu({ label, items, className }: DropdownMenuProps) {
     >
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 rounded-md px-3 py-2 text-[15px] font-semibold text-foreground/80 transition-all hover:bg-primary/5 hover:text-primary"
+        className="font-display flex items-center gap-1.5 rounded-lg px-3.5 py-2.5 text-[15px] font-semibold text-foreground transition-all duration-200 hover:bg-primary/5 hover:text-primary"
       >
         {label}
         <svg
@@ -58,22 +58,15 @@ export function DropdownMenu({ label, items, className }: DropdownMenuProps) {
         </svg>
       </button>
       {open && (
-        <div className="dropdown-animate-in absolute left-0 top-full z-50 mt-1 min-w-[260px] overflow-hidden rounded-xl border border-border/50 bg-card py-2 shadow-xl">
+        <div className="animate-dropdown-in absolute left-0 top-full z-50 mt-1 min-w-[220px] overflow-hidden rounded-xl border border-border/50 bg-card py-2 shadow-xl">
           {items.map((item) => (
             <Link
               key={item.href}
               to={item.href}
               onClick={() => setOpen(false)}
-              className="group flex flex-col px-4 py-3 transition-colors hover:bg-primary/5"
+              className="font-display group block px-4 py-2.5 text-[15px] font-semibold text-foreground transition-colors duration-200 hover:bg-primary/5 hover:text-primary"
             >
-              <span className="text-[15px] font-semibold text-foreground/80 transition-colors group-hover:text-primary">
-                {item.label}
-              </span>
-              {item.description && (
-                <span className="mt-0.5 text-xs text-muted-foreground/70">
-                  {item.description}
-                </span>
-              )}
+              {item.label}
             </Link>
           ))}
         </div>
