@@ -9,15 +9,15 @@ export const Route = createFileRoute("/_public/sdg-2")({
   head: () => ({
     meta: [
       { title: "UN SDG 2 | Farms Empire" },
-      { name: "description", content: "Farming our way to Zero Hunger through sustainable agriculture and cooperative enterprise." },
+      { name: "description", content: "Farming our way to Zero Hunger through sustainable agriculture." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${siteConfig.url}/sdg-2` },
       { property: "og:title", content: "UN SDG 2 | Farms Empire" },
-      { property: "og:description", content: "Farming our way to Zero Hunger through sustainable agriculture and cooperative enterprise." },
+      { property: "og:description", content: "Farming our way to Zero Hunger through sustainable agriculture." },
       { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "UN SDG 2 | Farms Empire" },
-      { name: "twitter:description", content: "Farming our way to Zero Hunger through sustainable agriculture and cooperative enterprise." },
+      { name: "twitter:description", content: "Farming our way to Zero Hunger through sustainable agriculture." },
       { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
     ],
     links: [
@@ -35,7 +35,7 @@ function SDG2Page() {
     <main className="min-h-screen">
       <PageHero
         title="UN SDG 2"
-        subtitle="Farming our way to Zero Hunger through sustainable agriculture and cooperative enterprise."
+        subtitle="Farming our way to Zero Hunger through sustainable agriculture."
       />
 
       {/* Intro */}

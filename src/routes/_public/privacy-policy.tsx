@@ -7,15 +7,15 @@ export const Route = createFileRoute("/_public/privacy-policy")({
   head: () => ({
     meta: [
       { title: "Privacy Policy | Farms Empire" },
-      { name: "description", content: "How we collect, use, and protect your personal information." },
+      { name: "description", content: "How we collect, use, protect, and manage your personal information." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${siteConfig.url}/privacy-policy` },
       { property: "og:title", content: "Privacy Policy | Farms Empire" },
-      { property: "og:description", content: "How we collect, use, and protect your personal information." },
+      { property: "og:description", content: "How we collect, use, protect, and manage your personal information." },
       { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Privacy Policy | Farms Empire" },
-      { name: "twitter:description", content: "How we collect, use, and protect your personal information." },
+      { name: "twitter:description", content: "How we collect, use, protect, and manage your personal information." },
       { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
     ],
     links: [
@@ -33,7 +33,7 @@ function PrivacyPolicyPage() {
     <main className="min-h-screen">
       <PageHero
         title="Privacy Policy"
-        subtitle="How we collect, use, and protect your personal information."
+        subtitle="How we collect, use, protect, and manage your personal information."
       />
 
       <section className="py-20">

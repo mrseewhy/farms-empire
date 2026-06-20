@@ -8,15 +8,15 @@ export const Route = createFileRoute("/_public/our-story")({
   head: () => ({
     meta: [
       { title: "Our Story | Farms Empire" },
-      { name: "description", content: "We did not learn this from a textbook. We built it through years of real farming." },
+      { name: "description", content: "We built this through years of real farming, not from a textbook." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${siteConfig.url}/our-story` },
       { property: "og:title", content: "Our Story | Farms Empire" },
-      { property: "og:description", content: "We did not learn this from a textbook. We built it through years of real farming." },
+      { property: "og:description", content: "We built this through years of real farming, not from a textbook." },
       { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Our Story | Farms Empire" },
-      { name: "twitter:description", content: "We did not learn this from a textbook. We built it through years of real farming." },
+      { name: "twitter:description", content: "We built this through years of real farming, not from a textbook." },
       { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
     ],
     links: [
@@ -34,7 +34,7 @@ function OurStoryPage() {
     <main className="min-h-screen">
       <PageHero
         title="Our Story"
-        subtitle="We did not learn this from a textbook. We built it through years of real farming."
+        subtitle="We built this through years of real farming, not from a textbook."
       />
 
       {/* Section 1 - Image Left */}

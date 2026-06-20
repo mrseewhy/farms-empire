@@ -8,15 +8,15 @@ export const Route = createFileRoute("/_public/who-we-are")({
   head: () => ({
     meta: [
       { title: "Who We Are | Farms Empire" },
-      { name: "description", content: "Bringing together landowners, communities, and experts to build sustainable farms." },
+      { name: "description", content: "Bringing together landowners, communities, and experts for sustainable farms." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${siteConfig.url}/who-we-are` },
       { property: "og:title", content: "Who We Are | Farms Empire" },
-      { property: "og:description", content: "Bringing together landowners, communities, and experts to build sustainable farms." },
+      { property: "og:description", content: "Bringing together landowners, communities, and experts for sustainable farms." },
       { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Who We Are | Farms Empire" },
-      { name: "twitter:description", content: "Bringing together landowners, communities, and experts to build sustainable farms." },
+      { name: "twitter:description", content: "Bringing together landowners, communities, and experts for sustainable farms." },
       { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
     ],
     links: [
@@ -34,7 +34,7 @@ function WhoWeArePage() {
     <main className="min-h-screen">
       <PageHero
         title="Who We Are"
-        subtitle="Bringing together landowners, communities, and experts to build sustainable farms."
+        subtitle="Bringing together landowners, communities, and experts for sustainable farms."
       />
 
       {/* Intro Grid 1 */}
