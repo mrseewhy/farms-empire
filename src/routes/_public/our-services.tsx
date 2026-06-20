@@ -12,7 +12,7 @@ function OurServicesPage() {
     <main className="min-h-screen">
       <PageHero
         title="Our Services"
-        subtitle="End-to-end agricultural solutions from consultancy and farm design to active management and market delivery."
+        subtitle="Consultancy, farm design, management, and market access under one roof."
       />
 
       {/* Services Grid */}

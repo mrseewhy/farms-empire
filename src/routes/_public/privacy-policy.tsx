@@ -10,7 +10,7 @@ function PrivacyPolicyPage() {
     <main className="min-h-screen">
       <PageHero
         title="Privacy Policy"
-        subtitle="Your privacy is important to us. This policy outlines how we collect, use, and protect your personal information."
+        subtitle="How we collect, use, and protect your personal information."
       />
 
       <section className="py-20">

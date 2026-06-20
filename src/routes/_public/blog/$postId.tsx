@@ -38,10 +38,11 @@ function BlogPostPage() {
 
   return (
     <main className="min-h-screen">
-      <PageHero
-        title={post.title}
-        subtitle={`${post.category} | ${post.date} | ${post.readTime}`}
-      />
+        <PageHero
+          title={post.title}
+          subtitle={`${post.category} | ${post.date} | ${post.readTime}`}
+          wide
+        />
 
       {/* Article */}
       <section className="bg-white py-20">

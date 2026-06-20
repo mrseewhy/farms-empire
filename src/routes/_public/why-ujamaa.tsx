@@ -11,7 +11,7 @@ function WhyUjamaaPage() {
     <main className="min-h-screen">
       <PageHero
         title="Why Ujamaa?"
-        subtitle="The Swahili philosophy of familyhood rooted in the belief that communities working together always produce more than any individual."
+        subtitle="The philosophy behind Africa's most effective communal farming model."
       />
 
       {/* What is Ujamaa */}

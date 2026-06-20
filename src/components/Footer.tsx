@@ -131,7 +131,7 @@ export function Footer() {
                   {siteConfig.contact.phone}
                 </a>
               </li>
-              <li>{siteConfig.contact.address.offices.join(", ")}</li>
+              <li>{siteConfig.contact.address.offices.join(". ")}</li>
             </ul>
           </div>
         </div>

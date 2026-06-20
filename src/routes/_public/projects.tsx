@@ -101,7 +101,7 @@ function ProjectsPage() {
     <main className="min-h-screen">
       <PageHero
         title="Our Projects"
-        subtitle="Growing Impact, One Community at a Time"
+        subtitle="Real farms, real communities, real impact across Nigeria and Africa."
       />
 
       {/* Intro */}

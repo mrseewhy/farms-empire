@@ -12,7 +12,7 @@ function OurSolutionPage() {
     <main className="min-h-screen">
       <PageHero
         title="Our Solution"
-        subtitle="End-to-end agricultural solutions from expert consultancy and farm design to community mobilization and return-on-investment delivery."
+        subtitle="From land activation to market delivery, we handle the full farming cycle."
       />
 
       {/* Intro */}

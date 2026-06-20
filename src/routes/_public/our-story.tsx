@@ -11,7 +11,7 @@ function OurStoryPage() {
     <main className="min-h-screen">
       <PageHero
         title="Our Story"
-        subtitle="We did not arrive at this model from a textbook. We earned it."
+        subtitle="We did not learn this from a textbook. We built it through years of real farming."
       />
 
       {/* Section 1 - Image Left */}

@@ -12,7 +12,7 @@ function BlogPage() {
     <main className="min-h-screen">
       <PageHero
         title="Blog"
-        subtitle="Stories, insights, and knowledge from the field."
+        subtitle="Stories and insights from the field of communal agriculture."
       />
 
       <section className="bg-white py-20">

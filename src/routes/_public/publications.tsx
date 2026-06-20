@@ -55,7 +55,7 @@ function PublicationsPage() {
     <main className="min-h-screen">
       <PageHero
         title="Publications"
-        subtitle="Insights, Research & Knowledge from the Field."
+        subtitle="Research, analysis, and knowledge from the field of communal agriculture."
       />
 
       {/* Intro */}

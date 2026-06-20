@@ -44,7 +44,7 @@ function FAQPage() {
     <main className="min-h-screen">
       <PageHero
         title="FAQs"
-        subtitle="Your questions about partnering with Farms Empire, answered. Everything you need to know before getting started."
+        subtitle="Quick answers to common questions about partnering with Farms Empire."
       />
 
       {/* FAQs */}

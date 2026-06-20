@@ -11,7 +11,7 @@ function WhoWeArePage() {
     <main className="min-h-screen">
       <PageHero
         title="Who We Are"
-        subtitle="Uniting landowners, communities, and expert practitioners to build sustainable farming enterprises across Africa."
+        subtitle="Bringing together landowners, communities, and experts to build sustainable farms."
       />
 
       {/* Intro Grid 1 */}

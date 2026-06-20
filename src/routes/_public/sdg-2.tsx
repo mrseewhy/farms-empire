@@ -12,7 +12,7 @@ function SDG2Page() {
     <main className="min-h-screen">
       <PageHero
         title="UN SDG 2"
-        subtitle="Farming our way to Zero Hunger through sustainable communal agriculture, cooperative enterprise, and food systems transformation."
+        subtitle="Farming our way to Zero Hunger through sustainable agriculture and cooperative enterprise."
       />
 
       {/* Intro */}

@@ -160,7 +160,7 @@ function ContactPage() {
     <main className="min-h-screen">
       <PageHero
         title="Contact Us"
-        subtitle="Whether you are a landowner, community, or investor - we would love to hear from you. Let's build something together."
+        subtitle="Reach out by phone, email, or visit any of our farm locations today."
       />
 
       {/* Hero Grid */}

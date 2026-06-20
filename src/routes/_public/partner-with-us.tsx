@@ -12,7 +12,7 @@ function PartnerWithUsPage() {
     <main className="min-h-screen">
       <PageHero
         title="Partner With Us"
-        subtitle="Your land, our expertise, one harvest. Turn idle land into a productive, income-generating agricultural asset."
+        subtitle="Turn your idle land into a productive, income-generating farm asset."
       />
 
       {/* Intro */}
