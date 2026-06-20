@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Communities Grow Empires",
   description:
     "Africa's leading United Nations SDG 2 intervention organization against hunger and food insecurity.",
-  url: "https://farmsempire.africa",
+  url: "https://farmsempire.com",
 
   contact: {
     phone: "+234 (0) 912 080 0107",

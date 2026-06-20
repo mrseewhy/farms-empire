@@ -28,18 +28,18 @@ Landowners contribute land. Communities contribute labour and local knowledge. F
 
 ## Pages
 
-- Home: https://farmsempire.africa/
-- About Us: https://farmsempire.africa/who-we-are
-- Our Story: https://farmsempire.africa/our-story
-- Solutions: https://farmsempire.africa/our-solution
-- Services: https://farmsempire.africa/our-services
-- Partner With Us: https://farmsempire.africa/partner-with-us
-- Projects: https://farmsempire.africa/projects
-- Blog: https://farmsempire.africa/blog
-- Contact: https://farmsempire.africa/contact
+- Home: https://farmsempire.com/
+- About Us: https://farmsempire.com/who-we-are
+- Our Story: https://farmsempire.com/our-story
+- Solutions: https://farmsempire.com/our-solution
+- Services: https://farmsempire.com/our-services
+- Partner With Us: https://farmsempire.com/partner-with-us
+- Projects: https://farmsempire.com/projects
+- Blog: https://farmsempire.com/blog
+- Contact: https://farmsempire.com/contact
 
 ## Contact
 
 - Email: info@farmsempire.africa
 - Phone: +234 (0) 912 080 0107
-- Website: https://farmsempire.africa
+- Website: https://farmsempire.com

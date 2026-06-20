@@ -1,6 +1,6 @@
 export default {
   // Site URL for canonical URLs and OG tags
-  siteUrl: "https://farmsempire.africa",
+  siteUrl: "https://farmsempire.com",
 
   // Routes to prerender
   routes: [
