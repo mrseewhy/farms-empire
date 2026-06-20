@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
@@ -32,7 +32,7 @@ const farmLocations = [
   "Well 8 Close, off Shell Location Road, Rumuepirikom, Port Harcourt, Rivers State.",
   "Federal Government Girls' College road, Abuloma, Port Harcourt, Rivers State.",
   "Lagos State Farm Estate, Odogunyan, Ikorodu, Lagos State.",
-  "Arigbawo Road, Of Mowe-Ofada Road, Mowe, Ogun State.",
+  "Arigbawo Road, Off Mowe-Ofada Road, Mowe, Ogun State.",
 ];
 
 const partnerTypes = [
@@ -77,6 +77,9 @@ const initialFormData: FormData = {
 };
 
 function ContactPage() {
+  useEffect(() => {
+    document.title = "Contact Us | Farms Empire";
+  }, []);
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);

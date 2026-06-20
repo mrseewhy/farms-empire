@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { LogoCarousel } from "../../components/LogoCarousel";
 import { StatCounter } from "../../components/StatCounter";
@@ -11,6 +12,9 @@ export const Route = createFileRoute("/_public/")({
 });
 
 function HomePage() {
+  useEffect(() => {
+    document.title = "Farms Empire | Africa's leading United Nations SDG 2 intervention organization";
+  }, []);
   return (
     <main className="min-h-screen">
       {/* Hero */}

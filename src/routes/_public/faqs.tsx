@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
@@ -59,6 +60,9 @@ const faqs = [
 ];
 
 function FAQPage() {
+  useEffect(() => {
+    document.title = "FAQs | Farms Empire";
+  }, []);
   const faqStructuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

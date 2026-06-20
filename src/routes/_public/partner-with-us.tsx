@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
@@ -27,6 +28,9 @@ export const Route = createFileRoute("/_public/partner-with-us")({
 });
 
 function PartnerWithUsPage() {
+  useEffect(() => {
+    document.title = "Partner With Us | Farms Empire";
+  }, []);
   return (
     <main className="min-h-screen">
       <PageHero

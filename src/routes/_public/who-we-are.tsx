@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
@@ -26,6 +27,9 @@ export const Route = createFileRoute("/_public/who-we-are")({
 });
 
 function WhoWeArePage() {
+  useEffect(() => {
+    document.title = "Who We Are | Farms Empire";
+  }, []);
   return (
     <main className="min-h-screen">
       <PageHero
@@ -39,7 +43,7 @@ function WhoWeArePage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <FadeIn direction="left">
               <div>
-                <div className="aspect-4/3 overflow-hidden rounded-2xl bg-muted shadow-2xl shadow-primary/10">
+                <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted shadow-2xl shadow-primary/10">
                   <img
                     src="/images/about-2.jpg"
                     alt="Farms Empire communal farming"

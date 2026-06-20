@@ -107,8 +107,8 @@ function BlogPostPage() {
                 url: `${siteConfig.url}/images/logo-nobg.png`,
               },
             },
-            datePublished: post.date,
-            dateModified: post.date,
+            datePublished: new Date(post.date).toISOString().split("T")[0],
+            dateModified: new Date(post.date).toISOString().split("T")[0],
             mainEntityOfPage: {
               "@type": "WebPage",
               "@id": postUrl,

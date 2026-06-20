@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "../../../components/PageHero";
 import { Stagger } from "../../../components/Stagger";
@@ -27,6 +28,9 @@ export const Route = createFileRoute("/_public/blog/")({
 });
 
 function BlogPage() {
+  useEffect(() => {
+    document.title = "Blog | Farms Empire";
+  }, []);
   return (
     <main className="min-h-screen">
       <PageHero

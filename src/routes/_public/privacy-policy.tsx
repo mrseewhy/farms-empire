@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { siteConfig } from "../../lib/config";
@@ -25,6 +26,9 @@ export const Route = createFileRoute("/_public/privacy-policy")({
 });
 
 function PrivacyPolicyPage() {
+  useEffect(() => {
+    document.title = "Privacy Policy | Farms Empire";
+  }, []);
   return (
     <main className="min-h-screen">
       <PageHero

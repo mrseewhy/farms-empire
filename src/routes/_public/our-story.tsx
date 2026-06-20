@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
@@ -26,6 +27,9 @@ export const Route = createFileRoute("/_public/our-story")({
 });
 
 function OurStoryPage() {
+  useEffect(() => {
+    document.title = "Our Story | Farms Empire";
+  }, []);
   return (
     <main className="min-h-screen">
       <PageHero
