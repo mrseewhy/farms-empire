@@ -1,8 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
+import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/our-story")({
+  head: () => ({
+    meta: [
+      { title: "Our Story | Farms Empire" },
+      { name: "description", content: "We did not learn this from a textbook. We built it through years of real farming." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/our-story` },
+      { property: "og:title", content: "Our Story | Farms Empire" },
+      { property: "og:description", content: "We did not learn this from a textbook. We built it through years of real farming." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Our Story | Farms Empire" },
+      { name: "twitter:description", content: "We did not learn this from a textbook. We built it through years of real farming." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/our-story` },
+    ],
+  }),
   component: OurStoryPage,
 });
 

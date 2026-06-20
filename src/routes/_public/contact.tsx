@@ -5,6 +5,24 @@ import { FadeIn } from "../../components/FadeIn";
 import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/contact")({
+  head: () => ({
+    meta: [
+      { title: "Contact Us | Farms Empire" },
+      { name: "description", content: "Reach out by phone, email, or visit any of our farm locations today." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/contact` },
+      { property: "og:title", content: "Contact Us | Farms Empire" },
+      { property: "og:description", content: "Reach out by phone, email, or visit any of our farm locations today." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Contact Us | Farms Empire" },
+      { name: "twitter:description", content: "Reach out by phone, email, or visit any of our farm locations today." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/contact` },
+    ],
+  }),
   component: ContactPage,
 });
 

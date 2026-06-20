@@ -1,8 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
+import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/projects")({
+  head: () => ({
+    meta: [
+      { title: "Our Projects | Farms Empire" },
+      { name: "description", content: "Real farms, real communities, real impact across Nigeria and Africa." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/projects` },
+      { property: "og:title", content: "Our Projects | Farms Empire" },
+      { property: "og:description", content: "Real farms, real communities, real impact across Nigeria and Africa." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Our Projects | Farms Empire" },
+      { name: "twitter:description", content: "Real farms, real communities, real impact across Nigeria and Africa." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/projects` },
+    ],
+  }),
   component: ProjectsPage,
 });
 

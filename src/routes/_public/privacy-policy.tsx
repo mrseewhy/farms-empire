@@ -1,7 +1,26 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
+import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/privacy-policy")({
+  head: () => ({
+    meta: [
+      { title: "Privacy Policy | Farms Empire" },
+      { name: "description", content: "How we collect, use, and protect your personal information." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/privacy-policy` },
+      { property: "og:title", content: "Privacy Policy | Farms Empire" },
+      { property: "og:description", content: "How we collect, use, and protect your personal information." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Privacy Policy | Farms Empire" },
+      { name: "twitter:description", content: "How we collect, use, and protect your personal information." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/privacy-policy` },
+    ],
+  }),
   component: PrivacyPolicyPage,
 });
 

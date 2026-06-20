@@ -1,17 +1,61 @@
+import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "../../../components/PageHero";
 import { FadeIn } from "../../../components/FadeIn";
 import { blogPosts } from "../../../lib/blog-data";
+import { siteConfig } from "../../../lib/config";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 
 export const Route = createFileRoute("/_public/blog/$postId")({
+  head: ({ params }) => {
+    const post = blogPosts.find((p) => p.id === params.postId);
+    if (!post) return { meta: [], links: [] };
+
+    const postUrl = `${siteConfig.url}/blog/${post.id}`;
+    const postImage = post.img.startsWith("http") ? post.img : `${siteConfig.url}${post.img}`;
+
+    return {
+      meta: [
+        { title: `${post.title} | Farms Empire` },
+        { name: "description", content: post.excerpt },
+        { name: "author", content: post.author },
+        { name: "robots", content: "index, follow" },
+
+        // Open Graph
+        { property: "og:type", content: "article" },
+        { property: "og:url", content: postUrl },
+        { property: "og:title", content: post.title },
+        { property: "og:description", content: post.excerpt },
+        { property: "og:image", content: postImage },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { property: "og:site_name", content: siteConfig.name },
+
+        // Twitter Card
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:url", content: postUrl },
+        { name: "twitter:title", content: post.title },
+        { name: "twitter:description", content: post.excerpt },
+        { name: "twitter:image", content: postImage },
+      ],
+      links: [
+        { rel: "canonical", href: postUrl },
+      ],
+    };
+  },
   component: BlogPostPage,
 });
 
 function BlogPostPage() {
   const { postId } = Route.useParams();
   const post = blogPosts.find((p) => p.id === postId);
+
+  useEffect(() => {
+    if (post) {
+      document.title = `${post.title} | Farms Empire`;
+    }
+  }, [post]);
 
   if (!post) {
     return (
@@ -36,13 +80,79 @@ function BlogPostPage() {
   const prevPost =
     blogPosts[currentIndex - 1] || blogPosts[blogPosts.length - 1];
 
+  const postUrl = `${siteConfig.url}/blog/${post.id}`;
+  const postImage = post.img.startsWith("http") ? post.img : `${siteConfig.url}${post.img}`;
+
   return (
     <main className="min-h-screen">
-        <PageHero
-          title={post.title}
-          subtitle={`${post.category} | ${post.date} | ${post.readTime}`}
-          wide
-        />
+      {/* Article Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: post.title,
+            description: post.excerpt,
+            image: postImage,
+            author: {
+              "@type": "Person",
+              name: post.author,
+            },
+            publisher: {
+              "@type": "Organization",
+              name: siteConfig.name,
+              logo: {
+                "@type": "ImageObject",
+                url: `${siteConfig.url}/images/logo-nobg.png`,
+              },
+            },
+            datePublished: post.date,
+            dateModified: post.date,
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": postUrl,
+            },
+          }),
+        }}
+      />
+
+      {/* BreadcrumbList Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: siteConfig.url,
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Blog",
+                item: `${siteConfig.url}/blog`,
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: post.title,
+                item: postUrl,
+              },
+            ],
+          }),
+        }}
+      />
+
+      <PageHero
+        title={post.title}
+        subtitle={`${post.category} | ${post.date} | ${post.readTime}`}
+        wide
+      />
 
       {/* Article */}
       <section className="bg-white py-20">

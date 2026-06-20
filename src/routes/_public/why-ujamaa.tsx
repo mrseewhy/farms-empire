@@ -1,8 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
+import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/why-ujamaa")({
+  head: () => ({
+    meta: [
+      { title: "Why Ujamaa? | Farms Empire" },
+      { name: "description", content: "The philosophy behind Africa's most effective communal farming model." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/why-ujamaa` },
+      { property: "og:title", content: "Why Ujamaa? | Farms Empire" },
+      { property: "og:description", content: "The philosophy behind Africa's most effective communal farming model." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Why Ujamaa? | Farms Empire" },
+      { name: "twitter:description", content: "The philosophy behind Africa's most effective communal farming model." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/why-ujamaa` },
+    ],
+  }),
   component: WhyUjamaaPage,
 });
 

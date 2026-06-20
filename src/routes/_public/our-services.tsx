@@ -4,6 +4,24 @@ import { FadeIn } from "../../components/FadeIn";
 import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/our-services")({
+  head: () => ({
+    meta: [
+      { title: "Our Services | Farms Empire" },
+      { name: "description", content: "Consultancy, farm design, management, and market access under one roof." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/our-services` },
+      { property: "og:title", content: "Our Services | Farms Empire" },
+      { property: "og:description", content: "Consultancy, farm design, management, and market access under one roof." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Our Services | Farms Empire" },
+      { name: "twitter:description", content: "Consultancy, farm design, management, and market access under one roof." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/our-services` },
+    ],
+  }),
   component: OurServicesPage,
 });
 

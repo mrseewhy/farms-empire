@@ -1,8 +1,27 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
+import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/faqs")({
+  head: () => ({
+    meta: [
+      { title: "FAQs | Farms Empire" },
+      { name: "description", content: "Quick answers to common questions about partnering with Farms Empire." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/faqs` },
+      { property: "og:title", content: "FAQs | Farms Empire" },
+      { property: "og:description", content: "Quick answers to common questions about partnering with Farms Empire." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "FAQs | Farms Empire" },
+      { name: "twitter:description", content: "Quick answers to common questions about partnering with Farms Empire." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/faqs` },
+    ],
+  }),
   component: FAQPage,
 });
 
@@ -40,8 +59,27 @@ const faqs = [
 ];
 
 function FAQPage() {
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <main className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData),
+        }}
+      />
       <PageHero
         title="FAQs"
         subtitle="Quick answers to common questions about partnering with Farms Empire."

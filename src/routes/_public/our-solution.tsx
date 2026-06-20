@@ -2,8 +2,27 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
 import { Stagger } from "../../components/Stagger";
+import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/our-solution")({
+  head: () => ({
+    meta: [
+      { title: "Our Solution | Farms Empire" },
+      { name: "description", content: "From land activation to market delivery, we handle the full farming cycle." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/our-solution` },
+      { property: "og:title", content: "Our Solution | Farms Empire" },
+      { property: "og:description", content: "From land activation to market delivery, we handle the full farming cycle." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Our Solution | Farms Empire" },
+      { name: "twitter:description", content: "From land activation to market delivery, we handle the full farming cycle." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/our-solution` },
+    ],
+  }),
   component: OurSolutionPage,
 });
 

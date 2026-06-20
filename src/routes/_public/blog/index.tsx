@@ -2,8 +2,27 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "../../../components/PageHero";
 import { Stagger } from "../../../components/Stagger";
 import { blogPosts } from "../../../lib/blog-data";
+import { siteConfig } from "../../../lib/config";
 
 export const Route = createFileRoute("/_public/blog/")({
+  head: () => ({
+    meta: [
+      { title: "Blog | Farms Empire" },
+      { name: "description", content: "Stories and insights from the field of communal agriculture." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/blog` },
+      { property: "og:title", content: "Blog | Farms Empire" },
+      { property: "og:description", content: "Stories and insights from the field of communal agriculture." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Blog | Farms Empire" },
+      { name: "twitter:description", content: "Stories and insights from the field of communal agriculture." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/blog` },
+    ],
+  }),
   component: BlogPage,
 });
 

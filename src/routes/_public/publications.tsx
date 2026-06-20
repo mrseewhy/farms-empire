@@ -4,6 +4,24 @@ import { FadeIn } from "../../components/FadeIn";
 import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/publications")({
+  head: () => ({
+    meta: [
+      { title: "Publications | Farms Empire" },
+      { name: "description", content: "Research, analysis, and knowledge from the field of communal agriculture." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/publications` },
+      { property: "og:title", content: "Publications | Farms Empire" },
+      { property: "og:description", content: "Research, analysis, and knowledge from the field of communal agriculture." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Publications | Farms Empire" },
+      { name: "twitter:description", content: "Research, analysis, and knowledge from the field of communal agriculture." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/publications` },
+    ],
+  }),
   component: PublicationsPage,
 });
 

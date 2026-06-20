@@ -2,8 +2,27 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
 import { Stagger } from "../../components/Stagger";
+import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/sdg-2")({
+  head: () => ({
+    meta: [
+      { title: "UN SDG 2 | Farms Empire" },
+      { name: "description", content: "Farming our way to Zero Hunger through sustainable agriculture and cooperative enterprise." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/sdg-2` },
+      { property: "og:title", content: "UN SDG 2 | Farms Empire" },
+      { property: "og:description", content: "Farming our way to Zero Hunger through sustainable agriculture and cooperative enterprise." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "UN SDG 2 | Farms Empire" },
+      { name: "twitter:description", content: "Farming our way to Zero Hunger through sustainable agriculture and cooperative enterprise." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/sdg-2` },
+    ],
+  }),
   component: SDG2Page,
 });
 

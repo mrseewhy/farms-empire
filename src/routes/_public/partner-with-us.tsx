@@ -2,8 +2,27 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
 import { Stagger } from "../../components/Stagger";
+import { siteConfig } from "../../lib/config";
 
 export const Route = createFileRoute("/_public/partner-with-us")({
+  head: () => ({
+    meta: [
+      { title: "Partner With Us | Farms Empire" },
+      { name: "description", content: "Turn your idle land into a productive, income-generating farm asset." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `${siteConfig.url}/partner-with-us` },
+      { property: "og:title", content: "Partner With Us | Farms Empire" },
+      { property: "og:description", content: "Turn your idle land into a productive, income-generating farm asset." },
+      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Partner With Us | Farms Empire" },
+      { name: "twitter:description", content: "Turn your idle land into a productive, income-generating farm asset." },
+      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+    ],
+    links: [
+      { rel: "canonical", href: `${siteConfig.url}/partner-with-us` },
+    ],
+  }),
   component: PartnerWithUsPage,
 });
 
