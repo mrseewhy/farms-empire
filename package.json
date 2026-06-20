@@ -4,11 +4,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate-blog && npm run generate-sitemap && npm run generate-routes && tsc -b && vite build",
+    "build": "npm run generate-blog && npm run generate-sitemap && npm run generate-routes && tsc -b && vite build && npm run prerender",
     "preview": "vite preview",
     "generate-routes": "tsr generate",
     "generate-blog": "tsx scripts/generate-blog.ts",
-    "generate-sitemap": "tsx scripts/generate-sitemap.ts"
+    "generate-sitemap": "tsx scripts/generate-sitemap.ts",
+    "prerender": "tsx scripts/prerender.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.3.0",
