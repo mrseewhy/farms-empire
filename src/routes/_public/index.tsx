@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 import { LogoCarousel } from "../../components/LogoCarousel";
 import { StatCounter } from "../../components/StatCounter";
 import { FadeIn } from "../../components/FadeIn";
@@ -12,9 +12,7 @@ export const Route = createFileRoute("/_public/")({
 });
 
 function HomePage() {
-  useEffect(() => {
-    document.title = "Farms Empire | Africa's leading United Nations SDG 2 intervention organization";
-  }, []);
+  useDocumentTitle("Farms Empire | Africa's leading United Nations SDG 2 intervention organization");
   return (
     <main className="min-h-screen">
       {/* Hero */}

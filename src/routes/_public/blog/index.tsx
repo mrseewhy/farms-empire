@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useDocumentTitle } from "../../../hooks/useDocumentTitle";
 import { PageHero } from "../../../components/PageHero";
 import { Stagger } from "../../../components/Stagger";
 import { blogPosts } from "../../../lib/blog-data";
@@ -28,9 +28,7 @@ export const Route = createFileRoute("/_public/blog/")({
 });
 
 function BlogPage() {
-  useEffect(() => {
-    document.title = "Blog | Farms Empire";
-  }, []);
+  useDocumentTitle("Blog | Farms Empire");
   return (
     <main className="min-h-screen">
       <PageHero

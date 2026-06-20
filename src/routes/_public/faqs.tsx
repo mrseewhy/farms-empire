@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
 import { siteConfig } from "../../lib/config";
@@ -60,9 +60,7 @@ const faqs = [
 ];
 
 function FAQPage() {
-  useEffect(() => {
-    document.title = "FAQs | Farms Empire";
-  }, []);
+  useDocumentTitle("FAQs | Farms Empire");
   const faqStructuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

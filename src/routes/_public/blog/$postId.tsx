@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useDocumentTitle } from "../../../hooks/useDocumentTitle";
 import { PageHero } from "../../../components/PageHero";
 import { FadeIn } from "../../../components/FadeIn";
 import { blogPosts } from "../../../lib/blog-data";
@@ -51,11 +51,7 @@ function BlogPostPage() {
   const { postId } = Route.useParams();
   const post = blogPosts.find((p) => p.id === postId);
 
-  useEffect(() => {
-    if (post) {
-      document.title = `${post.title} | Farms Empire`;
-    }
-  }, [post]);
+  useDocumentTitle(post ? `${post.title} | Farms Empire` : "Blog | Farms Empire");
 
   if (!post) {
     return (

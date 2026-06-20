@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
 import { siteConfig } from "../../lib/config";
@@ -27,9 +27,7 @@ export const Route = createFileRoute("/_public/who-we-are")({
 });
 
 function WhoWeArePage() {
-  useEffect(() => {
-    document.title = "Who We Are | Farms Empire";
-  }, []);
+  useDocumentTitle("Who We Are | Farms Empire");
   return (
     <main className="min-h-screen">
       <PageHero

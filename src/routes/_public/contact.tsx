@@ -1,5 +1,6 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
 import { siteConfig } from "../../lib/config";
@@ -77,9 +78,7 @@ const initialFormData: FormData = {
 };
 
 function ContactPage() {
-  useEffect(() => {
-    document.title = "Contact Us | Farms Empire";
-  }, []);
+  useDocumentTitle("Contact Us | Farms Empire");
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);

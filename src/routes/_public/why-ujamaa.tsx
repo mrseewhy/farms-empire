@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
 import { siteConfig } from "../../lib/config";
@@ -27,9 +27,7 @@ export const Route = createFileRoute("/_public/why-ujamaa")({
 });
 
 function WhyUjamaaPage() {
-  useEffect(() => {
-    document.title = "Why Ujamaa? | Farms Empire";
-  }, []);
+  useDocumentTitle("Why Ujamaa? | Farms Empire");
   return (
     <main className="min-h-screen">
       <PageHero

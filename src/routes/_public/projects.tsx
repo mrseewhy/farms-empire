@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 import { PageHero } from "../../components/PageHero";
 import { FadeIn } from "../../components/FadeIn";
 import { siteConfig } from "../../lib/config";
@@ -117,9 +117,7 @@ const projects = [
 ];
 
 function ProjectsPage() {
-  useEffect(() => {
-    document.title = "Projects | Farms Empire";
-  }, []);
+  useDocumentTitle("Projects | Farms Empire");
   return (
     <main className="min-h-screen">
       <PageHero
