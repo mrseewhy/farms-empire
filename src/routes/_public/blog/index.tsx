@@ -9,20 +9,33 @@ export const Route = createFileRoute("/_public/blog/")({
   head: () => ({
     meta: [
       { title: "Blog | Farms Empire" },
-      { name: "description", content: "Stories and insights from the field of communal agriculture." },
+      {
+        name: "description",
+        content: "Stories and insights from the field of communal agriculture.",
+      },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${siteConfig.url}/blog` },
       { property: "og:title", content: "Blog | Farms Empire" },
-      { property: "og:description", content: "Stories and insights from the field of communal agriculture." },
-      { property: "og:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      {
+        property: "og:description",
+        content: "Stories and insights from the field of communal agriculture.",
+      },
+      {
+        property: "og:image",
+        content: `${siteConfig.url}/images/farmsempire-card.jpg`,
+      },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Blog | Farms Empire" },
-      { name: "twitter:description", content: "Stories and insights from the field of communal agriculture." },
-      { name: "twitter:image", content: `${siteConfig.url}/images/farmsempire-card.jpg` },
+      {
+        name: "twitter:description",
+        content: "Stories and insights from the field of communal agriculture.",
+      },
+      {
+        name: "twitter:image",
+        content: `${siteConfig.url}/images/farmsempire-card.jpg`,
+      },
     ],
-    links: [
-      { rel: "canonical", href: `${siteConfig.url}/blog` },
-    ],
+    links: [{ rel: "canonical", href: `${siteConfig.url}/blog` }],
   }),
   component: BlogPage,
 });
@@ -30,15 +43,18 @@ export const Route = createFileRoute("/_public/blog/")({
 function BlogPage() {
   useDocumentTitle("Blog | Farms Empire");
   return (
-    <main className="min-h-screen">
+    <main className="flex min-h-screen flex-col">
       <PageHero
         title="Blog"
         subtitle="Stories and insights from the field of communal agriculture."
       />
 
-      <section className="bg-white py-20">
+      <section className="flex-1 bg-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Stagger staggerDelay={100} className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <Stagger
+            staggerDelay={100}
+            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          >
             {blogPosts.map((post) => (
               <Link
                 key={post.id}
