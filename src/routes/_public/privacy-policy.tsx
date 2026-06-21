@@ -50,7 +50,7 @@ function PrivacyPolicyPage() {
               security of all individuals who interact with our website,
               services, and partnership programs. This Privacy Policy explains
               how we collect, use, disclose, and safeguard your information when
-              you visit our website at www.farmsempire.africa, engage with our
+              you visit our website at www.farmsempire.com, engage with our
               communal farming partnerships, subscribe to our communications, or
               otherwise interact with us.
             </p>
@@ -363,28 +363,28 @@ function PrivacyPolicyPage() {
               <br />
               Email:{" "}
               <a
-                href="mailto:privacy@farmsempire.africa"
+                href="mailto:privacy@farmsempire.com"
                 className="text-primary hover:underline"
               >
-                privacy@farmsempire.africa
+                privacy@farmsempire.com
               </a>
               <br />
               General Enquiries:{" "}
               <a
-                href="mailto:info@farmsempire.africa"
+                href="mailto:info@farmsempire.com"
                 className="text-primary hover:underline"
               >
-                info@farmsempire.africa
+                info@farmsempire.com
               </a>
               <br />
               Contact details:{" "}
               <a
-                href="https://www.farmsempire.africa"
+                href="https://www.farmsempire.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
-                www.farmsempire.africa
+                www.farmsempire.com
               </a>
             </p>
 

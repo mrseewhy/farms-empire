@@ -49,7 +49,7 @@ export function LogoCarousel() {
   }, []);
 
   return (
-    <section className="border-y border-border/40 bg-white py-12">
+    <section className="bg-white py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="mb-8 text-sm font-bold uppercase tracking-[0.2em] text-muted-foreground">
           They Trust Us

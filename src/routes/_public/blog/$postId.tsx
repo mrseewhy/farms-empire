@@ -147,14 +147,13 @@ function BlogPostPage() {
       <PageHero
         title={post.title}
         subtitle={`${post.category} | ${post.date} | ${post.readTime}`}
-        wide
       />
 
       {/* Article */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn direction="up">
-            <div className="aspect-[21/9] overflow-hidden rounded-2xl bg-muted shadow-2xl shadow-primary/10">
+            <div className="aspect-[16/9] sm:aspect-[21/9] overflow-hidden rounded-2xl bg-muted shadow-2xl shadow-primary/10">
               <img
                 src={post.img}
                 alt={post.title}

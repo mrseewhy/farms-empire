@@ -54,7 +54,7 @@ function generateBlogData() {
   const sitemapPosts = posts
     .map(
       (post) => `  <url>
-    <loc>https://farmsempire.africa/blog/${post.id}</loc>
+    <loc>https://farmsempire.com/blog/${post.id}</loc>
     <lastmod>${new Date(post.date).toISOString().split("T")[0]}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

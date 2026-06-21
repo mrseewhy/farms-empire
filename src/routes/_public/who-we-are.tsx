@@ -296,6 +296,31 @@ function WhoWeArePage() {
           </div>
         </div>
       </section>
+
+      {/* Accreditation and Farming Partners */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <FadeIn direction="up">
+            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+              Accreditation and Farming Partners
+            </h2>
+            <div className="mx-auto mt-10 grid grid-cols-2 items-center justify-items-center gap-8 sm:grid-cols-3 lg:grid-cols-5">
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => (
+                <div
+                  key={n}
+                  className="flex h-20 w-full items-center justify-center"
+                >
+                  <img
+                    src={`/images/logos/logo-${n}.jpg`}
+                    alt={`Partner ${n}`}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </FadeIn>
+        </div>
+      </section>
     </main>
   );
 }

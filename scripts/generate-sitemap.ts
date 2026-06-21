@@ -6,20 +6,20 @@ const contentDir = path.join(process.cwd(), "content/blog");
 const outputFile = path.join(process.cwd(), "public/sitemap.xml");
 
 const staticPages = [
-  { loc: "https://farmsempire.africa/", priority: "1.0", changefreq: "weekly" },
-  { loc: "https://farmsempire.africa/who-we-are", priority: "0.8", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/our-story", priority: "0.8", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/our-solution", priority: "0.8", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/our-services", priority: "0.8", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/why-ujamaa", priority: "0.7", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/sdg-2", priority: "0.7", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/partner-with-us", priority: "0.9", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/projects", priority: "0.8", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/publications", priority: "0.6", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/blog", priority: "0.7", changefreq: "weekly" },
-  { loc: "https://farmsempire.africa/faqs", priority: "0.5", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/contact", priority: "0.7", changefreq: "monthly" },
-  { loc: "https://farmsempire.africa/privacy-policy", priority: "0.3", changefreq: "yearly" },
+  { loc: "https://farmsempire.com/", priority: "1.0", changefreq: "weekly" },
+  { loc: "https://farmsempire.com/who-we-are", priority: "0.8", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/our-story", priority: "0.8", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/our-solution", priority: "0.8", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/our-services", priority: "0.8", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/why-ujamaa", priority: "0.7", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/sdg-2", priority: "0.7", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/partner-with-us", priority: "0.9", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/projects", priority: "0.8", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/publications", priority: "0.6", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/blog", priority: "0.7", changefreq: "weekly" },
+  { loc: "https://farmsempire.com/faqs", priority: "0.5", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/contact", priority: "0.7", changefreq: "monthly" },
+  { loc: "https://farmsempire.com/privacy-policy", priority: "0.3", changefreq: "yearly" },
 ];
 
 function generateSitemap() {
@@ -55,7 +55,7 @@ function generateSitemap() {
   const blogUrls = blogPosts
     .map(
       (post) => `  <url>
-    <loc>https://farmsempire.africa/blog/${post.id}</loc>
+    <loc>https://farmsempire.com/blog/${post.id}</loc>
     <lastmod>${new Date(post.date).toISOString().split("T")[0]}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

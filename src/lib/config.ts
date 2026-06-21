@@ -8,9 +8,9 @@ export const siteConfig = {
   contact: {
     phone: "+234 (0) 912 080 0107",
     email: {
-      general: "info@farmsempire.africa",
-      partnerships: "partnerships@farmsempire.africa",
-      media: "media@farmsempire.africa",
+      general: "info@farmsempire.com",
+      partnerships: "partnerships@farmsempire.com",
+      media: "media@farmsempire.com",
     },
     address: {
       offices: ["Nigeria", "Kenya", "Uganda", "Ghana", "South Africa"],
