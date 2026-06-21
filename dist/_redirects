@@ -1,2 +1,0 @@
-# No SPA fallback needed - all routes are prerendered
-# Cloudflare Pages serves the correct HTML file for each route
